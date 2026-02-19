@@ -1,0 +1,10 @@
+<div style="padding:8px;line-height:24px;">
+	<span class="ent_kv_io_name">- {{ include.name }}</span>
+	{% if include.type %}
+	 <span class="ent_kv_intn">&lt;{{ include.type }}&gt;</span>
+	{% endif %}
+	<br>
+	{% if include.desc %}
+	<span class="ent_kv_desc">{{ include.desc }}</span>
+	{% endif %}
+</div>

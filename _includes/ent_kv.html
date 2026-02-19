@@ -1,0 +1,6 @@
+<div style="padding:8px;line-height:24px;">
+	<span class="ent_kv_name">- {{ include.name }}</span> {% if include.internal %}(<span class="ent_kv_intn">{{ include.internal }}</span>){% endif %} <span class="ent_kv_intn">&lt;{{ include.type }}&gt;</span><br>
+	{% if include.desc %}
+	<span class="ent_kv_desc">{{ include.desc }}</span>
+	{% endif %}
+</div>

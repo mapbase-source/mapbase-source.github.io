@@ -1,0 +1,8 @@
+<div class="banner banner-obsolete"><img class="banner-icon" src="{{ "/" | relative_url }}assets/entities/obsolete.png"/><div class="banner-content">
+{% if include.reason and include.reason != "" %}
+This {{ include.subject }} is considered obsolete for the following reason(s):<br><i style="margin:16px;">{{ include.reason }}</i><br>
+{% else %}
+This {{ include.subject }} is considered obsolete.
+{% endif %}
+Its use is discouraged and it may not fully function.
+</div></div>

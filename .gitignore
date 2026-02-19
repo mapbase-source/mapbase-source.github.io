@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+
+# Tool artifacts
+tools/*.fgd
+tools/*.mp4
+tools/*.gif
+tools/*.txt

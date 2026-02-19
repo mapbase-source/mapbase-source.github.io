@@ -1,0 +1,70 @@
+---
+layout: default_boxed
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+	<hr>
+  </header>
+
+	<div class="post-content">
+		{% assign grammar_article = "a" %}
+		
+	<!-- Define entity type -->
+	{% case page.type %}
+		{% when "logic", "logical", "PointClass" %}
+			{% assign ent_type = "point entity" %}
+		{% when "brush", "SolidClass" %}
+			{% assign ent_type = "brush entity" %}
+		{% when "model" %}
+			{% assign ent_type = "model entity" %}
+		{% when "filter", "FilterClass" %}
+			{% assign ent_type = "filter entity" %}
+		{% when "npc", "NPCClass" %}
+			{% assign ent_type = "NPC entity" %}
+		{% else %}
+			{% assign grammar_article = "an" %}
+			{% assign ent_type = "entity" %}
+	{% endcase %}
+	
+	<!-- Define Mapbase version -->
+	{% if page.mb_version and page.mb_version != "" %}
+		{% if page.mb_version == -1 %}
+			<!-- Stock entity -->
+			{% assign grammar_article = "an existing" %}
+			{% assign mapbase_ver = "all versions of Mapbase" %}
+		{% else %}
+			{% assign mapbase_ver = include.version | prepend: 'Mapbase ' | append: " or later" %}
+		{% endif %}
+	{% else %}
+		{% assign mapbase_ver = "any version of Mapbase" %}
+	{% endif %}
+	
+	<!-- Define game of origin -->
+	{% capture game %}
+			{% case page.game %}
+				{% when "hl2" %}
+					in {% include hl2.html %} <strong>Half-Life 2</strong>
+				{% when "hl2dm" %}
+					in {% include hl2.html %} <strong>Half-Life 2: Deathmatch</strong>
+				{% when "tf2", "tf" %}
+					in {% include tf2.html %} <strong>Team Fortress 2</strong>
+				{% else %}
+				
+			{% endcase %}
+	{% endcapture %}
+	
+	{% if page.notice and page.notice != "" %}
+	{% include {{ page.notice }}	subject="entity"	reason=page.reason %}
+	<br>
+	{% endif %}
+		
+	{% if page.ent_icon and page.ent_icon != "" %}
+	<img class="ent_icon" src="{{ "/" | relative_url }}{{ page.ent_icon }}"/>
+	{% endif %}
+	<div style="padding-bottom:12px;"><code>{{ page.title }}</code> is {{ grammar_article }} {{ ent_type }} available {{ game }} with {{ mapbase_ver }}.</div>
+	{{ content }}
+	</div>
+
+</article>

@@ -1,0 +1,42 @@
+---
+layout: default_boxed
+---
+<article class="post">
+	
+	{% assign header-styles = "" %}
+	{% if page.header-center %}
+		{% assign header-styles = header-styles | append: "text-align:center;" %}
+	{% endif %}
+	
+	{% assign header = page.title %}
+	{% if page.header %}
+		{% assign header = page.header %}
+	{% endif %}
+
+  <header class="post-header" style="{{header-styles}}">
+    <h1 class="post-title">
+		{% if page.icon %}
+    <img class="game_article_icon" src="{{ "/" | relative_url }}{{ page.icon }}" title="HL2" alt="(HL2)"/>
+	{% endif %}
+	{{ header | escape }}</h1>
+	<hr>
+	
+	{% if page.related_pages %}
+		<div class="post-related"><i><span style="padding:4px;">See also:</span>
+			{% for relurl in page.related_pages %}
+				{% assign lasturl = forloop.last %}
+				{% for relpage in site.pages %}
+					{% if relpage.url == relurl %}
+						<a rel="author" href="{{ relpage.url }}" style="padding:1px;">{{ relpage.title }}</a>{% if lasturl == false %}<span>, </span>{% endif %}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+		</i></div>
+	{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

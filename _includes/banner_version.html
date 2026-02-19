@@ -1,0 +1,13 @@
+<div class="banner banner-version banner-version-{{ include.version | replace: ".", "-" }}"><img class="banner-icon" src="{{ "/" | relative_url }}assets/website_icon_alert1.png"/><div class="banner-content">
+{% assign version_char = include.version | slice: 0 %}
+{% if version_char and version_char == 'v' %}
+	{% assign version = "Mapbase " %}
+	{% assign version = version | append: include.version %}
+	{% assign version_post = " or newer" %}
+{% elsif include.version == "MP" %}
+	{% assign version = "the Mapbase MP branch" %}
+{% else %}
+	{% assign version = include.version %}
+{% endif %}
+This feature is exclusive to <strong>{{ version }}</strong>{{ version_post }}.
+</div></div>

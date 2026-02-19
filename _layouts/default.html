@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {% unless page.name == 'index.html' %}
+      {%- include header.html -%}
+	{% endunless %}
+	
+	{% assign wrapper-extras = "" %}
+	{% if page.wide %}
+	  {% assign wrapper-extras = wrapper-extras | append: " wrapper-wide" %}
+	{% endif %}
+	{% if page.big-text %}
+		{% assign wrapper-extras = wrapper-extras | append: " wrapper-big-text" %}
+	{% endif %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper{{wrapper-extras}}">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

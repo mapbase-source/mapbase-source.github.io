@@ -1,0 +1,16 @@
+    <div class="feature_column"> <!-- TODO: Figure out how to paramaterize class instead of doing separate file? -->
+		<div class="feature_wip" onmouseenter="ShowWipBackground(this)" onmouseleave="HideWipBackground(this)">
+			<div class="feature_box">
+				<!--<span class="feature_background" style="background-image: url('{{ include.bg }}')"></span>-->
+				<span class="feature_wip_background_color" style="z-index: 3;"></span>
+				<span class="feature_wip_background_overlay"></span>
+				<div class="feature_wip_banner_text" style="font-size:26px;"><span>WORK IN PROGRESS</span></div>
+				<div style="width:20%;">
+					<img class="feature_icon" src="{{ "/" | relative_url }}{{ include.icon }}"/>
+				</div>
+				<div class="feature_text" style="color:#a0a0a0; font-size:20px;">
+					<p>{{ include.text }}</p>
+				</div>
+			</div>
+		</div>
+	</div>

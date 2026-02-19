@@ -1,0 +1,18 @@
+<tr data-game="{{ include.game }}">
+	<td class="ent_list_name">
+	{% assign entpage = site.pages | where_exp: "p", "p.url contains include.name" | first %}
+	{% if entpage %}
+		<a href="{{ entpage.url }}">{{ include.name }}</a>
+	{% else %}
+		{{ include.name }}
+	{% endif %}
+    {% case include.game %}
+      {% when "hl2", "hl2ep2" %}
+		{% include hl2.html %}
+      {% when "tf2" %}
+		{% include tf2.html %}
+    {% endcase %}
+	</td>
+	<td class="ent_list_status ent_list_status-{{ include.status }}">{{ include.status }}</td>
+	<td class="ent_list_summary">{{ include.summary }}</td>
+</tr>

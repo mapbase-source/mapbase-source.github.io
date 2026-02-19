@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    {% if page.bg_img %}
+  <style type="text/css" media="screen">
+    body {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #201e20 900px), url("{{ "/" | relative_url }}{{ page.bg_img }}");
+      background-repeat: no-repeat;
+  	  background-size: cover;
+      background-position: center;
+    }
+  </style>
+	{% else %}
+  <style type="text/css" media="screen">
+    body {
+      background-color: $background-article-color;
+    }
+  </style>
+	{% endif %}
+</head>
+
+  {%- include head.html -%}
+
+  <body>
+
+    {% unless page.name == 'index.html' %}
+      {%- include header.html -%}
+	{% endunless %}
+	
+    {% if page.breadcrumb %}
+		<div class="wrapper breadcrumb-trail">
+			<div class="breadcrumb-trail-box">
+			{%- assign breadcrumb_strings = page.url | split: "/" -%}
+			{% for parent in breadcrumb_strings %}
+				{% if parent == "" %}
+					{% continue %}
+				{% endif %}
+				{% for parent_page in site.pages %}
+					{%- assign parent_page_name = parent_page.url | split: "/" | last | split: '.' | first -%}
+					{% if parent_page_name != parent %}
+						{% continue %}
+					{% endif %}
+					{% if parent_page.title == page.title %}
+						<span><strong>{{ parent_page.title }}</strong></span>
+					{% else %}
+						<a rel="author" href="{{ parent_page.url }}">{{ parent_page.title }}</a>
+						<span> >> </span>
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+			</div>
+		<hr>
+		</div>
+	{% else %}
+		<div style="padding:16px;"/>
+	{% endif %}
+	
+	{% assign wrapper-extras = "" %}
+	{% if page.wide %}
+		{% assign wrapper-extras = wrapper-extras | append: " wrapper-wide" %}
+	{% endif %}
+	{% if page.big-text %}
+		{% assign wrapper-extras = wrapper-extras | append: " wrapper-big-text" %}
+	{% endif %}
+
+    <main class="page-content" style="padding-top:0px;" aria-label="Content">
+      <div class="wrapper article-box{{wrapper-extras}}">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

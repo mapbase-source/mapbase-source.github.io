@@ -1,0 +1,14 @@
+    <div class="feature_column feature_column_triple">
+		<a class="feature_button" title="{{ include.desc }}" href="{{ include.url }}" onmouseenter="ShowBackground(this)" onmouseleave="HideBackground(this)">
+			<div class="feature_box">
+				<span class="feature_background" style="background-image: url('{{ include.bg }}')"></span>
+				<span class="feature_background_color"></span>
+				<div style="width:20%;">
+					<img class="feature_icon" style="width:50px;" src="{{ "/" | relative_url }}{{ include.icon }}"/>
+				</div>
+				<div class="feature_text">
+					<p>{{ include.text }}</p>
+				</div>
+			</div>
+		</a>
+	</div>

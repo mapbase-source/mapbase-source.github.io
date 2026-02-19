@@ -1,0 +1,270 @@
+---
+permalink: /
+layout: home
+---
+
+<style type="text/css" media="screen">
+  body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #201e20 900px), url("assets/website_home_bg.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+  }
+	/*
+		Landing
+	*/
+  .top_container {
+    margin: 10px auto;
+    max-width: 900px;
+    text-align: center;
+	font-size: 16px; font-weight: 650; letter-spacing: 1.25px;
+  }
+  .top_icon {
+    width: 300px;
+	transition: transform 0.5s ease;
+  }
+  .top_icon:hover {
+    transform: scale(1.05);
+    transform: rotate(2deg);
+	transition: transform 0.5s ease;
+  }
+  .top_icon_hinge {
+	transition: transform 1s ease;
+  }
+  .top_icon_hinge.clicked {
+    transform: scale(1.05);
+    transform: rotate(720deg);
+	transition: transform 1s ease;
+  }
+  .top_box {
+    padding: 16px; color: #ffffff; height: auto; width: auto;
+	background-color: rgba(0,0,0,0.8);
+	opacity: 1.0; filter: alpha(opacity=100); border: 5px; border-radius: 25px;
+  }
+  .top_box_small {
+    position: relative; left:30%;
+    width: 40%;
+  }
+  
+  .wip_box {
+    position: relative; overflow: hidden;
+    display: flex; justify-content: center; align-items: center;
+    padding: 8px; color: #ffffff; height: auto;
+	margin-top: 32px; margin-left: 64px; margin-right: 64px;
+	background-color: rgba(0,0,0,0.8);
+	opacity: 1.0; filter: alpha(opacity=100); border: 5px dashed yellow; border-radius: 25px;
+	text-shadow: 4px 4px 8px black;
+  }
+  .wip_box_overlay {
+	background-image: url('../assets/wip_overlay.png'); background-repeat: repeat;
+	position:absolute; min-width: 0; min-height: 0; width:200%; height:100%;
+	opacity: 0.25;
+	z-index: 1;
+	animation: wip_overlay_slide 10s linear infinite;
+  }
+  .wip_box_text {
+	z-index: 2;
+	font-size: 18px; font-weight: 600; text-align: center;
+  }
+	/*
+		Background Icons
+	*/
+  .sea {
+    position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 100%; height: 600px;
+    z-index: -1;
+	background: none;
+  }
+  .sea_icon_l {
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+	animation: slide_r 30s linear;
+  }
+  .sea_icon_r {
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+	animation: slide_l 30s linear;
+	right: 0px;
+  }
+  @keyframes slide_r {
+      0% {
+          transform: translateX(0);
+		  opacity: 0;
+      }
+      15% {
+		  opacity: 0.75;
+      }
+      85% {
+		  opacity: 0.75;
+      }
+      100% {
+          transform: translateX(95vw);
+		  opacity: 0;
+      }
+  }
+  @keyframes slide_l {
+      0% {
+          transform: translateX(0);
+		  opacity: 0;
+      }
+      15% {
+		  opacity: 0.75;
+      }
+      85% {
+		  opacity: 0.75;
+      }
+      100% {
+          transform: translateX(-95vw);
+		  opacity: 0;
+      }
+  }
+	/*
+		Navbar
+	*/
+  #landing_navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  
+  #landing_navbar ul li {
+    float: left;
+  }
+  
+  #landing_navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size: 16px; font-weight: 650; letter-spacing: 1.25px;
+  }
+  
+  #landing_navbar ul li a:hover {
+    background-color: #111111;
+  }
+	/*
+		Socials
+	*/
+  socials_icon {
+    width: 50px;
+  }
+  socials_icon_img {
+    width: 50px;
+  }
+  /* ___ */
+  .measure_box {
+    padding: 8px; color: #ffffff; height: auto;
+	background-image: url('assets/dev_measuregeneric_slick02a.png');
+	opacity: 1.0; filter: alpha(opacity=100); border: 5px solid black; border-radius: 25px;
+  }
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<!--
+	Landing
+-->
+
+<div id="sea" class="sea">
+</div>
+
+<div class="top_container">
+	<br>
+	<p style="display:flex; gap:0px; justify-content:center; align-items: center;">
+		<button id="top_icon_button" style="background:none; border:none; cursor: pointer;">
+			<div id="top_icon_hinge" class="top_icon_hinge">
+				<img id="top_icon_img" class="top_icon" src="assets/website_home_icon.png" width="300"/>
+			</div>
+		</button>
+		<img src="assets/website_home_text.png" width="600" height="50%"/>
+	</p>
+	<br>
+	<br>
+	<div class="top_box">
+		<p>Mapbase is an open-source enhancement for the Source SDK that targets mappers and modders.</p>
+		<p>Its primary goal is to add quality-of-life features through changes to the Source 2013 codebase.</p>
+	</div>
+	<div class="wip_box">
+		<span class="wip_box_overlay"></span>
+		<p class="wip_box_text">This site is still under construction and may not have all expected content.<br>
+		Use <a href="https://github.com/mapbase-source/source-sdk-2013">Mapbase's original wiki</a> or <a href="https://developer.valvesoftware.com/wiki/Mapbase/Docs">incomplete VDC documentation</a> if needed.</p>
+	</div>
+	<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+	<br>
+	<!--<div class="top_box top_box_small">
+		<p>Download from ModDB:</p>
+		<a href="https://www.moddb.com/mods/mapbase/downloads/mapbase-release-build" title="Download Mapbase Release Build - ModDB" target="_blank"><img src="https://button.moddb.com/download/medium/183649.png" alt="Mapbase Release Build" /></a>
+	</div>-->
+	<br>
+	<br>
+	<br>
+</div>
+
+<nav id="landing_navbar">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <ul>
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+    </ul>
+</nav>
+
+<hr>
+<br>
+
+<p class="top_box" style="display:flex; gap:32px; justify-content:center; align-items: center;">
+	<a class="socials_icon" href="https://www.moddb.com/mods/mapbase" title="Mapbase on ModDB"><img class="socials_icon_img" src="https://media.moddb.com/images/global/moddb.png" alt="ModDB" width="50"></a>
+	<a class="socials_icon" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="Mapbase on ModDB"><img class="socials_icon_img" src="assets/socials_github.webp" alt="GitHub" width="50"></a>
+	<a class="socials_icon" href="https://discord.gg/nd8tXNg" title="Mapbase Discord Server"><img class="socials_icon_img" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62f0a9e560a799075a4e0cea_Discord-Logo-White (3).png" alt="Discord" width="50"></a>
+	<a class="socials_icon" href="https://mapbase-source.notion.site/Mapbase-Development-34e27a9892864c96b1e0021ea780d880" title="Mapbase Notion Site"><img class="socials_icon_img" src="https://media.moddb.com/images/members/4/3640/3639342/profile/ExternalIcon_Notion_001a.png" alt="Notion" width="50"></a>
+	<a class="socials_icon" href="https://developer.valvesoftware.com/wiki/Mapbase" title="Mapbase on Valve Developer Community"><img class="socials_icon_img" src="https://media.moddb.com/images/members/4/3640/3639342/profile/ExternalIcon_VDC_001a.png" alt="VDC" width="50"></a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/mapbase-source/source-sdk-2013/releases" alt="Releases">
+        <img src="https://img.shields.io/github/v/release/mapbase-source/source-sdk-2013?color=6f37de&logo=github" /></a>
+</p>
+
+<!--
+	Content
+-->
+
+<!--
+	Resources
+-->
+
+<script src="js/home.js"></script>
+
+<audio id="icon_spin_sound">
+  <source src="assets/hint.mp3" type="audio/mpeg">
+  <source src="assets/hint.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
