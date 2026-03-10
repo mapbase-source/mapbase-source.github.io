@@ -5,7 +5,7 @@ permalink: /docs/ents/game_timer/
 breadcrumb: true
 ent_icon: assets/entities/game_timer.png
 type: PointClass
-mb_version: 
+mb_version: v8.0
 game: 
 ---
 

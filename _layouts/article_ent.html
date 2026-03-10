@@ -35,7 +35,7 @@ layout: default_boxed
 			{% assign grammar_article = "an existing" %}
 			{% assign mapbase_ver = "all versions of Mapbase" %}
 		{% else %}
-			{% assign mapbase_ver = include.version | prepend: 'Mapbase ' | append: " or later" %}
+			{% assign mapbase_ver = page.mb_version | prepend: 'Mapbase ' | append: " or later" %}
 		{% endif %}
 	{% else %}
 		{% assign mapbase_ver = "any version of Mapbase" %}

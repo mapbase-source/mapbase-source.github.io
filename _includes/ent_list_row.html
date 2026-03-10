@@ -1,6 +1,8 @@
 <tr data-game="{{ include.game }}">
 	<td class="ent_list_name">
-	{% assign entpage = site.pages | where_exp: "p", "p.url contains include.name" | first %}
+	{% comment %} Need to have our name end with a slash to work properly {% endcomment %}
+	{% assign appended_name = include.name | append: "/" %}
+	{% assign entpage = site.pages | where_exp: "p", "p.url contains appended_name" | first %}
 	{% if entpage %}
 		<a href="{{ entpage.url }}">{{ include.name }}</a>
 	{% else %}

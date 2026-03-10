@@ -115,7 +115,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="ambient_generic"		status="Changed"	summary="<code>SetSound</code>, sound flags keyvalue with \"Pause sound with game pause\" option, <code>!activator</code> support, <code>OnSoundFinished</code>" %}
 	{% include ent_list_row.html	name="assault_assaultpoint"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="assault_rallypoint"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="color_correction"		status="Stock"	summary="" %}
+	{% include ent_list_row.html	name="color_correction"		status="Changed"	summary="Exclusivity, clientside simulation, etc. ported from the Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="color_correction_volume"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="combine_mine"		status="Changed"	summary="Added friend/foe override filters, fixed default enemy registering, added several new I/O/KV including the ability to start friendly, etc. Also actually acts like a point entity in Hammer." %}
 	{% include ent_list_row.html	name="concussiveblast"		status="Restored"	summary="This entity is used for the striders' warp cannon and was used for the cut Combine Guard's weapon, but Mapbase gives it a bunch of I/O/KV and puts it in the FGD." %}
@@ -130,7 +130,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_bubbles"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_citadel_energy_core"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="env_closecaption"		status="New"	summary="Emits captions/subtitles manually without requiring an accompanying sound." %}
-	{% include ent_list_row.html	name="env_credits"		status="Changed"	summary="The ability to use custom credits files and set the number of lingering ending lines have been added." %}
+	{% include ent_list_row.html	name="env_credits"		status="Changed"	summary="The ability to use custom credits files, separate credits into columns, show images, and set the number of lingering ending lines have been added." %}
 	{% include ent_list_row.html	name="env_cubemap"		status="Changed"	summary="[[Parallax Corrected Cubemaps]] are now supported. Also see [[Mapbase/Docs/Autocubemap: Autocubemap]]." %}
 	{% include ent_list_row.html	name="env_dof_controller"		status="Ported"	summary="An entity ported from the Alien Swarm SDK which allows for a complex depth-of-field effect." %}
 	{% include ent_list_row.html	name="env_dustpuff"		status="Stock"	summary="" %}
@@ -150,13 +150,13 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_global"		status="Changed"	summary="<code>Counter</code> output replaced with <code>OutCounter</code> in an attempt to dodge the aliasing issue. New global states have also been added, but they're unrelated to env_global itself. (todo: Document them)" %}
 	{% include ent_list_row.html	name="env_global_light"		status="Ported"	summary="An orthographic projected texture entity ported from the Alien Swarm SDK. It's received a few changes in Mapbase, like zero default offset with keyvalues for mappers change it themselves." %}
 	{% include ent_list_row.html	name="env_gunfire"		status="Changed"	summary="Ability to choose any sound in the sound browser, <code>FireBurst</code> for firing bursts manually, <code>OnFire</code> for each bullet." %}
-	{% include ent_list_row.html	name="env_headcrabcanister"		status="Changed"	summary="<code>StopHissing</code> to stop post-impact hissing, <code>OnCrab</code> for each crab that emerges from the canister"	game="hl2" %}
+	{% include ent_list_row.html	name="env_headcrabcanister"		status="Changed"	summary="<code>StopHissing</code> to stop post-impact hissing, <code>OnCrab</code> for each crab that emerges from the canister, and ability to use random spawn type"	game="hl2" %}
 	{% include ent_list_row.html	name="env_hudhint"		status="Changed"	summary="Button combinations, raw strings, etc. as well as <code>SetHudHint</code>. (todo: Expand upon \"etc.\")" %}
 	{% include ent_list_row.html	name="env_instructor_hint"		status="Ported"	summary="Mapper-placed hint for the game instructor." %}
 	{% include ent_list_row.html	name="env_laser"		status="Changed"	summary="<code>OnTouchedByEntity</code> added, based on the output from <code>env_beam</code>. It fires per frame though, so be careful." %}
 	{% include ent_list_row.html	name="env_lightglow"		status="Changed"	summary="Added <code>Enable/Disable</code> inputs and the ability to start disabled. Fade distances in Hammer also now have spheres." %}
 	{% include ent_list_row.html	name="env_message"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="env_microphone"		status="Changed"	summary="Added unmarked DSP presets, SetDSPPreset, specific channel/pitch scale, and a local landmark keyvalue similar to trigger_teleport." %}
+	{% include ent_list_row.html	name="env_microphone"		status="Changed"	summary="Added unmarked DSP presets, SetDSPPreset, channel selection, volume/pitch scale, and a local landmark keyvalue similar to trigger_teleport." %}
 	{% include ent_list_row.html	name="env_muzzleflash"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_particle_performance_monitor"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_particlelight"		status="Stock"	summary="" %}
@@ -168,7 +168,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_rotorshooter"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_rotorwash"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_rotorwash_emitter"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="env_screeneffect"		status="Stock"	summary="" %}
+	{% include ent_list_row.html	name="env_screeneffect"		status="Changed"	summary="Added primitive new chromatic abberration effects." %}
 	{% include ent_list_row.html	name="env_shake"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_shooter"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_smokestack"		status="Changed"	summary="Now properly derives from Targetname in Hammer, meaning it is no longer missing user I/O, etc." %}
@@ -188,7 +188,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_sun"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_terrainmorph"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_texturetoggle"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="env_tonemap_controller"		status="Changed"	summary="Added <code>UseDefaultBloomScale</code> and <code>SetBloomScaleRange</code> to Hammer, fixed <code>SetBloomScaleRange</code> only accepting single floats." %}
+	{% include ent_list_row.html	name="env_tonemap_controller"		status="Changed"	summary="Keyvalues added for every setting that would otherwise be set via input. Also added <code>UseDefaultBloomScale</code> and <code>SetBloomScaleRange</code> to Hammer and fixed <code>SetBloomScaleRange</code> only accepting single floats." %}
 	{% include ent_list_row.html	name="env_viewpunch"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_wind"		status="Changed"	summary="Added \"wind radius\", a feature from (l4d: 4) that allows for multiple <code>env_wind</code> entities in different areas. Also added inputs to change all wind parameters and a \"Tree sway scale\" for how much an <code>env_wind</code> entity should affect [[$treesway]] materials. Also added \"inner\" radius, which allows the <code>env_wind</code>'s intensity to fade out in combination with regular wind radius." %}
 	{% include ent_list_row.html	name="env_zoom"		status="Changed"	summary="Added <code>UnZoomWithRate</code> and <code>SetZoomRate</code> inputs for unzooming at the zoom rate and setting the zoom rate after spawning." %}
@@ -216,6 +216,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="filter_redirect_inflictor"		status="New"	summary="Redirects to a target filter with the damage inflictor as the activator instead of the attacker." %}
 	{% include ent_list_row.html	name="filter_redirect_owner"		status="New"	summary="Redirects to a target filter with the activator's owner entity as the activator instead of the original activator." %}
 	{% include ent_list_row.html	name="filter_script"		status="New"	summary="A filter which utilizes hooks in its [[Entity Scripts]]." %}
+	{% include ent_list_row.html	name="fog_volume"		status="Ported"	summary="Trigger that changes the <code>env_fog_controller</code>, <code>color_correction</code>, and <code>postprocess_controller</code> of players that walk through it. Ported from the Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="func_areaportal"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_areaportal_oneway"		status="New"	summary="Variant of func_areaportal that only draws when viewed from one direction. Based on the code from [[CAreaPortalOneWay: this article]]." %}
 	{% include ent_list_row.html	name="func_areaportalwindow"		status="Stock"	summary="" %}
@@ -226,11 +227,11 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="func_button"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_clip_client"		status="New"	summary="A special brush that only has a physics shadow on the client, allowing clientside ragdolls to collide with it." %}
 	{% include ent_list_row.html	name="func_clip_vphysics"		status="Changed"	summary="Implemented the \"Start Disabled\" keyvalue and added a new <code>SetFilter</code> input." %}
-	{% include ent_list_row.html	name="func_combine_ball_spawner"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="func_combine_ball_spawner"		status="Changed"	summary="New <code>Destroy</code> input that causes the balls to fly everywhere."	game="hl2" %}
 	{% include ent_list_row.html	name="func_commandredirect"		status="New"	summary="Detects when the player commands their squad to move somewhere within the volume, with the ability to fire outputs, cancel the order, redirect the order, etc."	game="hl2" %}
 	{% include ent_list_row.html	name="func_conveyor"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_detail"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="func_door"		status="Changed"	summary="No longer contains obsolete GoldSrc-era keyvalues." %}
+	{% include ent_list_row.html	name="func_door"		status="Changed"	summary="No longer contains obsolete GoldSrc-era keyvalues. Touch Opens spawnflag now starts off." %}
 	{% include ent_list_row.html	name="func_door_rotating"		status="Affected"	summary="Uses the same changes as <code>func_door</code>." %}
 	{% include ent_list_row.html	name="func_dustcloud"		status="Changed"	summary="Radius now displays in Hammer." %}
 	{% include ent_list_row.html	name="func_dustmotes"		status="Changed"	summary="Radius now displays in Hammer." %}
@@ -255,7 +256,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="func_recharge"		status="Changed"	summary="Has been given some of <code>item_suitcharger</code>'s I/O/KV, but not all of them."	game="hl2" %}
 	{% include ent_list_row.html	name="func_reflective_glass"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_rot_button"		status="Changed"	summary="Fixed the \"Starts Locked\" spawnflag." %}
-	{% include ent_list_row.html	name="func_rotating"		status="Changed"	summary="Applied normalizaton to angles." %}
+	{% include ent_list_row.html	name="func_rotating"		status="Changed"	summary="Applied normalizaton to angles and added keyvalues for controlling min/max sound pitch." %}
 	{% include ent_list_row.html	name="func_smokevolume"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_tank"		status="Changed"	summary="Ported \"ammo type\", moved around a few things, added some NPC-related inputs, added a trace filter, etc. (todo: Expand upon \"etc.\")" %}
 	{% include ent_list_row.html	name="func_tank_combine_cannon"		status="Changed"	summary="Added support for the player to control directly."	game="hl2ep2" %}
@@ -281,12 +282,14 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="game_convar_mod"		status="New"	summary="Part of the convar modification system that allows maps to change cvars in a safe and controlled way, saving them so they could be loaded later and reverting them on level unload." %}
 	{% include ent_list_row.html	name="game_end"		status="Changed"	summary="New <code>EndGameSP</code> input that functions as a shortcut for \"startupmenu force\". This could be changed by certain mods (e.g. mapping competitions) for firing \"map finished\" events." %}
 	{% include ent_list_row.html	name="game_globalvars"		status="New"	summary="Reads certain global variables, like curtime." %}
+	{% include ent_list_row.html	name="game_menu"		status="New"	summary="Displays a selectable number menu on the HUD." %}
 	{% include ent_list_row.html	name="game_metadata"		status="New"	summary="Stores map details for things like the Discord RPC, allowing mappers to control game details shown on Discord while they're playing their map." %}
 	{% include ent_list_row.html	name="game_player_equip"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="game_player_team"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="game_ragdoll_manager"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="game_score"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="game_text"		status="Changed"	summary="Added <code>SetText</code> from Alien Swarm and newline support with <code>/n</code> (mind the forward slash). Also added auto-break keyvalue." %}
+	{% include ent_list_row.html	name="game_timer"		status="New"	summary="Displays a custom timer on the HUD." %}
 	{% include ent_list_row.html	name="game_ui"		status="Stock"	summary="Added outputs for several binds, also added <code>OutButtons</code> for use with <code>math_bits</code>." %}
 	{% include ent_list_row.html	name="game_weapon_manager"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="game_zone_player"		status="Stock"	summary="" %}
@@ -299,7 +302,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="info_camera_link"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_constraint_anchor"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_darknessmode_lightsource"		status="Stock"	summary=""	game="hl2" %}
-	{% include ent_list_row.html	name="info_hint"		status="Changed"	summary="<code>SetHintGroup</code>, hintgroup in <code>ent_text</code>, node FOV shows up in Hammer as a frustum" %}
+	{% include ent_list_row.html	name="info_hint"		status="Changed"	summary="New hint radius/weight keyvalues, new <code>SetHintGroup</code> input, and new <code>OnScriptEvent</code> outputs. Node FOV now shows up in Hammer as a frustum. Hintgroup is also listed in <code>ent_text</code>." %}
 	{% include ent_list_row.html	name="info_intermission"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_ladder_dismount"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_landmark"		status="Stock"	summary="" %}
@@ -309,7 +312,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="info_node"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_node_air"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_node_air_hint"		status="Affected"	summary="Uses <code>info_hint</code> and <code>info_node_hint</code> changes." %}
-	{% include ent_list_row.html	name="info_node_climb"		status="Stock"	summary="" %}
+	{% include ent_list_row.html	name="info_node_climb"		status="Changed"	summary="Added ability to override lineup linkage via target node keyvalue." %}
 	{% include ent_list_row.html	name="info_node_hint"		status="Changed"	summary="Various hint types correctly use hint options, also affected by <code>info_hint</code> changes." %}
 	{% include ent_list_row.html	name="info_node_link"		status="Changed"	summary="There are several new derivatives available, but the entity itself hasn't really changed aside from a new icon in Hammer. " %}
 	{% include ent_list_row.html	name="info_node_link_controller"		status="Stock"	summary="Hasn't really changed, but there's an <code>info_template_link_controller</code> for link derivatives now." %}
@@ -321,15 +324,16 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="info_overlay"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_overlay_transition"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_particle_system"		status="Changed"	summary="New <code>DestroyImmediately</code> input inspired by the Portal 2 input of the same name." %}
+	{% include ent_list_row.html	name="info_particle_system_coordinate"		status="New"	summary="Variant of <code>info_particle_system</code> that uses explicit coordinates for its control points instead of entities." %}
 	{% include ent_list_row.html	name="info_player_start"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_player_view_proxy"		status="New"	summary="Copies a player's view as if they're at a different position. Created for <code>script_intro</code> sequences. Not be confused with (ent: point_viewproxy), a Portal 2 entity. " %}
 	{% include ent_list_row.html	name="info_projecteddecal"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_radar_target"		status="Changed"	summary="White Forest battle enemy targets added to FGD."	game="hl2" %}
 	{% include ent_list_row.html	name="info_radial_link_controller"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_snipertarget"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="info_target"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="info_target_gunshipcrash"		status="Stock"	summary=""	game="hl2" %}
-	{% include ent_list_row.html	name="info_target_helicopter_crash"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="info_target"		status="Changed"	summary="Added \"Always transmit to client\" spawnflag from Alien Swarm SDK" %}
+	{% include ent_list_row.html	name="info_target_gunshipcrash"		status="Stock"	summary="Changed <code>OnCrashed</code> activator to crashing gunship and added new <code>OnBeginCrash</code> output."	game="hl2" %}
+	{% include ent_list_row.html	name="info_target_helicopter_crash"		status="Changed"	summary="Added ability to disable + <code>OnCrashed</code> and <code>OnBeginCrash</code> outputs."	game="hl2" %}
 	{% include ent_list_row.html	name="info_target_vehicle_transition"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_teleport_destination"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="info_teleporter_countdown"		status="Stock"	summary="" %}
@@ -348,17 +352,19 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="item_ammo_smg1_grenade"		status="Affected"	summary="Uses by all ammo item changes."	game="hl2" %}
 	{% include ent_list_row.html	name="item_ammo_smg1_large"		status="Changed"	summary="No longer uses invalid model."	game="hl2" %}
 	{% include ent_list_row.html	name="item_battery"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="item_battery_custom"		status="New"	summary="Variant of item_battery that allows armor amount, sound, and model to be chosen."	game="hl2" %}
 	{% include ent_list_row.html	name="item_box_buckshot"		status="Affected"	summary="Uses by all ammo item changes."	game="hl2" %}
 	{% include ent_list_row.html	name="item_dynamic_resupply"		status="Changed"	summary="<code>OnItem</code> for each item created, master resupply properly falls back to health vial when needed"	game="hl2" %}
 	{% include ent_list_row.html	name="item_grubnugget"		status="Restored"	summary="Entity for the nuggets produced by <code>npc_antlion_grub</code>s with a selectable model/size/denomination."	game="hl2" %}
 	{% include ent_list_row.html	name="item_healthcharger"		status="Changed"	summary="Various I/O/KV related to setting charge/juice"	game="hl2" %}
 	{% include ent_list_row.html	name="item_healthkit"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="item_healthkit_custom"		status="New"	summary="Variant of item_healthkit that allows health amount, sound, and model to be chosen."	game="hl2" %}
 	{% include ent_list_row.html	name="item_healthvial"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="item_item_crate"		status="Changed"	summary="<code>OnItem</code> for each item (including items created by <code>item_dynamic_resupply</code>), custom model support, <code>point_template</code> crate contents, support for single NPCs by not randomizing angles"	game="hl2" %}
 	{% include ent_list_row.html	name="item_rpg_round"		status="Affected"	summary="Uses by all ammo item changes."	game="hl2" %}
 	{% include ent_list_row.html	name="item_suit"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="item_suitcharger"		status="Changed"	summary="Various I/O/KV related to setting charge/juice"	game="hl2" %}
-	{% include ent_list_row.html	name="keyframe_rope"		status="Changed"	summary="<code>OnBreak</code> output, (ent: SplineRope) shader via <code>SDK_Cable</code>" %}
+	{% include ent_list_row.html	name="keyframe_rope"		status="Changed"	summary="<code>OnBreak</code> output, <code>SetSlack</code>/<code>SetWidth</code>/<code>SetSubdivision</code> inputs, (ent: SplineRope) shader via <code>SDK_Cable</code>" %}
 	{% include ent_list_row.html	name="keyframe_track"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="light"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="light_dynamic"		status="Stock"	summary="" %}
@@ -369,7 +375,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="logic_auto"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="logic_autosave"		status="Changed"	summary="New Hammer icon ported from Portal 2." %}
 	{% include ent_list_row.html	name="logic_branch"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="logic_branch_listener"		status="Stock"	summary="" %}
+	{% include ent_list_row.html	name="logic_branch_listener"		status="Changed"	summary="Fix <code>logic_branch</code> not notifying branch listeners properly on removal" %}
 	{% include ent_list_row.html	name="logic_case"		status="Changed"	summary="<code>OnUsed</code> for each time used by <code>InValue</code>, matcher system support with an option to allow multiple matching cases to be fired. You might also want to look into <code>logic_random_outputs</code>, a different entity ported from Alien Swarm SDK which can take percentages directly." %}
 	{% include ent_list_row.html	name="logic_choreographed_scene"		status="Changed"	summary="<code>SetTarget#</code> for all targets, <code>Trigger</code> input added to FGD. Also a couple changes to the choreography system itself." %}
 	{% include ent_list_row.html	name="logic_collision_pair"		status="Stock"	summary="" %}
@@ -391,7 +397,8 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="logic_multicompare"		status="Changed"	summary="Added a bunch of new I/O/KV. Changes very similar to <code>logic_compare</code>." %}
 	{% include ent_list_row.html	name="logic_navigation"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="logic_playerinfo"		status="New"	summary="Allows mappers to get a player's basic info, like their Steam name, or find a player by that info. Utilizes data already used throughout the engine." %}
-	{% include ent_list_row.html	name="logic_playerproxy"		status="Changed"	summary="Several new I/O/KV for interacting with the player, including expanded flashlight control, the ability to change the player's armor value, and even some playermodel-related stuff." %}
+	{% include ent_list_row.html	name="logic_playerproxy"		status="Changed"	summary="Several new I/O/KV for interacting with the player, including expanded flashlight control, the ability to change the player's armor value, and playermodel visibility options." %}
+	{% include ent_list_row.html	name="logic_playmovie"		status="Ported"	summary="Plays a video from the <code>media</code> folder over the player's screen. Ported directly from Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="logic_random_outputs"		status="Ported"	summary="Fires outputs based on specified percentages. Ported directly from Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="logic_register_activator"		status="Replicated"	summary="Stores the specified entity and allows it to be accessed later. Based on the entity of the same name from Portal 2." %}
 	{% include ent_list_row.html	name="logic_relay"		status="Changed"	summary="New <code>TriggerWithParameter</code>/<code>OnTriggerParameter</code> I/O for using parameters on the relay." %}
@@ -401,6 +408,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="logic_script_client"		status="New"	summary="A version of <code>logic_script</code> which runs scripts on clients." %}
 	{% include ent_list_row.html	name="logic_sequence"		status="New"	summary="Coordinates a sequence of cases for things like keypad passwords. Convention is similar to <code>logic_case</code>." %}
 	{% include ent_list_row.html	name="logic_skill"		status="New"	summary="Reads the game's current difficulty level and detects when it changes." %}
+	{% include ent_list_row.html	name="logic_substring"		status="New"	summary="An entity that isolates a substring from a string parameter." %}
 	{% include ent_list_row.html	name="logic_timer"		status="Changed"	summary="New keyvalue to use random interval bounds to limit <code>AddToTimer</code>/<code>SubtractToTimer</code> inputs." %}
 	{% include ent_list_row.html	name="mapbase_manifest"		status="New"	summary="Allows mappers to load manifest files other than the default <code>%mapname%_manifest.txt</code> file. (bug: hidetested=1: No icon. Possibly non-functional.)" %}
 	{% include ent_list_row.html	name="material_modify_control"		status="Stock"	summary="" %}
@@ -417,7 +425,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="momentary_rot_button"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="monster_generic"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="move_keyframed"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="move_rope"		status="Changed"	summary="<code>OnBreak</code> output, (ent: SplineRope) shader via <code>SDK_Cable</code>" %}
+	{% include ent_list_row.html	name="move_rope"		status="Changed"	summary="<code>OnBreak</code> output, <code>SetSlack</code>/<code>SetWidth</code>/<code>SetSubdivision</code> inputs, (ent: SplineRope) shader via <code>SDK_Cable</code>" %}
 	{% include ent_list_row.html	name="move_track"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="npc_advisor"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_alyx"		status="Changed"	summary="Inherits all companion changes, see <code>npc_citizen</code>."	game="hl2" %}
@@ -436,7 +444,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="npc_combine_camera"		status="Changed"	summary="Proper support for <code>OnLostEnemy</code>/<code>Player</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_combine_cannon"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_combine_s"		status="Changed"	summary="Now uses easy and unarmed animations, new grenade I/O/KV, response system support, new tactical variant, better alt-firing, and much more. Differing models also properly appear in Hammer."	game="hl2" %}
-	{% include ent_list_row.html	name="npc_combinedropship"		status="Changed"	summary="Added a <code>DropCargo</code> input for dropping objects picked up by the <code>Pickup</code> input and an option to disable danger signals that normally disperse NPCs on the ground. Also added a keyvalue that allows any damage type to damage a dropship's container and another keyvalue to control the container's health."	game="hl2" %}
+	{% include ent_list_row.html	name="npc_combinedropship"		status="Changed"	summary="Added a <code>DropCargo</code> input for dropping objects picked up by the <code>Pickup</code> input and an option to disable danger signals that normally disperse NPCs on the ground. Also added a keyvalue that allows any damage type to damage a dropship's container and another keyvalue to control the container's health. <code>DropStrider</code> input now plays the strider's drop sequence."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_combinegunship"		status="Changed"	summary="Restored the ability for gunships to use their ground attack automatically, now controlled by a keyvalue. Also added a keyvalue that allows any damage type to damage a gunship and another keyvalue to control the number of hits needed to take it down."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_crabsynth"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_cranedriver"		status="Stock"	summary=""	game="hl2" %}
@@ -444,21 +452,21 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="npc_cscanner"		status="Changed"	summary="Added the ability to enable/disable photo-taking, causing a scanner to only follow its enemies."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_dog"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_eli"		status="Stock"	summary=""	game="hl2" %}
-	{% include ent_list_row.html	name="npc_enemyfinder"		status="Changed"	summary="New keyvalue for specifying a NPC class to simulate." %}
+	{% include ent_list_row.html	name="npc_enemyfinder"		status="Changed"	summary="New keyvalue for specifying a NPC class to simulate. Min/max search distance now display spheres in Hammer." %}
 	{% include ent_list_row.html	name="npc_enemyfinder_combinecannon"		status="Affected"	summary="Inherits all changes from <code>npc_enemyfinder</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_fastzombie"		status="Changed"	summary="Hooked health and damage to convars, now follows base torso rules. Also carries base zombie changes detailed in <code>npc_zombie</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_fastzombie_torso"		status="Affected"	summary="Inherits all changes from <code>npc_fastzombie</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_fisherman"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_gman"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_grenade_frag"		status="Changed"	summary="Now allows specific damage, radius, etc. and outputs that pass position, all inherited from base grenade."	game="hl2" %}
-	{% include ent_list_row.html	name="npc_headcrab"		status="Changed"	summary="<code>OnLeap</code> output that fires for each time the headcrab leaps and passes the headcrab's assumed leap target as the activator."	game="hl2" %}
+	{% include ent_list_row.html	name="npc_headcrab"		status="Changed"	summary="<code>OnLeap</code> output that fires for each time the headcrab leaps and passes the headcrab's assumed leap target as the activator. Burrowing-related inputs are also now visible."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_headcrab_black"		status="Affected"	summary="Inherits all changes detailed in <code>npc_headcrab</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_headcrab_fast"		status="Affected"	summary="Inherits all changes detailed in <code>npc_headcrab</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_heli_avoidbox"		status="Stock"	summary=""	game="hl2" %}
-	{% include ent_list_row.html	name="npc_heli_avoidsphere"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="npc_heli_avoidsphere"		status="Changed"	summary="Now supports a filter keyvalue."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_helicopter"		status="Changed"	summary="New output <code>OutBomb</code> for each bomb dropped, Field of View keyvalue so you can control whether they can see you from every direction, custom model support. Also added a keyvalue that allows any damage type to damage a helicopter and another keyvalue to control the helicopter's health.			: "	game="hl2" %}
 	{% include ent_list_row.html	name="npc_helicopter_custom"		status="New"	summary="Custom helicopter NPC that supports a custom model, custom sounds, custom flight parameters, etc.			: "	game="hl2" %}
-	{% include ent_list_row.html	name="npc_hunter"		status="Changed"	summary="Hunters now die instantly to energy balls fired by NPCs in the same way they die from energy balls fired by players. (small: I mean, seriously now. That instructor who said the AR2 could kill hunters was straight-up lying to those rebels. Maybe we should've been punching those hunters all along...)"	game="hl2" %}
+	{% include ent_list_row.html	name="npc_hunter"		status="Changed"	summary="Hunters now die instantly to energy balls fired by NPCs in the same way they die from energy balls fired by players. Also has a new keyvalue to disable idle patrolling."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_hunter_maker"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_ichthyosaur"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_kleiner"		status="Stock"	summary=""	game="hl2" %}
@@ -478,11 +486,11 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="npc_seagull"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_sniper"		status="Changed"	summary="Custom model support, custom beam support, response system support, obsolete FGD stuff removed, separate spawnflag for dying on fire. (note: Snipers will no longer die on fire in Episodic and must have this spawnflag enabled!)"	game="hl2" %}
 	{% include ent_list_row.html	name="npc_stalker"		status="Changed"	summary="Added a \"Player Aggression\" keyvalue and an option to use the same synth blood used by hunters."	game="hl2" %}
-	{% include ent_list_row.html	name="npc_strider"		status="Changed"	summary="Added a stomp filter for choosing who the strider is allowed to stomp. Also implemented VDC fix for <code>npc_clawscanner</code> strider scouting."	game="hl2" %}
+	{% include ent_list_row.html	name="npc_strider"		status="Changed"	summary="Added a stomp filter for choosing who the strider is allowed to stomp and an <code>EnableCrouch</code> input. Also implemented VDC fix for <code>npc_clawscanner</code> strider scouting."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_template_maker"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_tripmine"		status="Restored"	summary="<code>weapon_slam</code>'s tripmine with new I/O/KV so it could be placed in Hammer as an entity the mapper sets up."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_turret_ceiling"		status="Changed"	summary="Fixed <code>npc_turret_ceiling</code> having no sounds or muzzle flashes. Added option to specify a <code>npc_turret_ceiling</code>'s health and sight FOV. Added inputs to control ammo depletion, based on floor turret's inputs. Added spawnflag and inputs to disable the turret's \"eye\" sprite."	game="hl2" %}
-	{% include ent_list_row.html	name="npc_turret_floor"		status="Changed"	summary="Added spawnflag and inputs to disable the turret's \"eye\" sprite, made \"Skin Number\" use actual skin and show up in Hammer, restored Alyx's ability to hack turrets via a convar that's '''disabled by default'''."	game="hl2" %}
+	{% include ent_list_row.html	name="npc_turret_floor"		status="Changed"	summary="Added spawnflag and inputs to disable the turret's \"eye\" sprite, made \"Skin Number\" use actual skin and show up in Hammer, restored Alyx's ability to hack turrets via a convar that's disabled by default."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_turret_ground"		status="Changed"	summary="Removed requirement to have parent."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_turret_lab"		status="New"	summary="A functional version of <code>labturret.mdl</code>."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_vehicledriver"		status="Stock"	summary="" %}
@@ -522,8 +530,8 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="point_antlion_repellant"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="point_apc_controller"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="point_bonusmaps_accessor"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="point_bugbait"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="point_camera"		status="Changed"	summary="Has a new option to draw the skybox through this camera, meaning the skybox will show up correctly on monitors. Also now properly derives from <code>Targetname</code> in the FGD." %}
+	{% include ent_list_row.html	name="point_bugbait"		status="Changed"	summary="New bounding box testing mode that checks a box rather than a radius." %}
+	{% include ent_list_row.html	name="point_camera"		status="Changed"	summary="New keyvalue that determines whether to draw the skybox. Also now properly derives from <code>Targetname</code> in the FGD." %}
 	{% include ent_list_row.html	name="point_camera_ortho"		status="New"	summary="A special type of camera that captures an orthographic image. Otherwise identical to <code>point_camera</code> in every way, including its Mapbase changes." %}
 	{% include ent_list_row.html	name="point_clientcommand"		status="Changed"	summary="Has a new icon in Hammer." %}
 	{% include ent_list_row.html	name="point_combine_ball_launcher"		status="Stock"	summary=""	game="hl2" %}
@@ -548,18 +556,18 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="point_radiation_source"		status="New"	summary="A source of radiation that the player's geiger counter reacts to. Does no actual damage." %}
 	{% include ent_list_row.html	name="point_ragdollboogie"		status="New"	summary="Forces NPCs and ragdolls to use ragdoll boogie, a feature which handles the electrical arcs that occur on ragdolls after being launched by the supercharged gravity gun, etc." %}
 	{% include ent_list_row.html	name="point_servercommand"		status="Changed"	summary="Has a new icon in Hammer." %}
-	{% include ent_list_row.html	name="point_spotlight"		status="Changed"	summary="New <code>LightToggle</code> input." %}
+	{% include ent_list_row.html	name="point_spotlight"		status="Changed"	summary="New halo scale and custom material keyavlues + <code>LightToggle</code> input." %}
 	{% include ent_list_row.html	name="point_teleport"		status="Changed"	summary="<code>TeleportEntity</code> and <code>TeleportToCurrentPos</code> inputs inspired by Counter-Strike: Global Offensive." %}
 	{% include ent_list_row.html	name="point_template"		status="Changed"	summary="<code>OutSpawnedEntity</code> and <code>ForceSpawnRandomTemplate</code>." %}
 	{% include ent_list_row.html	name="point_tesla"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="point_velocitysensor"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="point_viewcontrol"		status="Changed"	summary="FOV options ported from Alien Swarm SDK and some bug fixes controlled by a \"New behavior\" spawnflag to avoid breaking existing entities. (the spawnflag is on by default)" %}
+	{% include ent_list_row.html	name="point_viewcontrol"		status="Changed"	summary="FOV options ported from Alien Swarm SDK, with track speed and target options recreated. Some bug fixes are toggled by a \"New behavior\" spawnflag to avoid breaking existing entities. (the spawnflag is on by default)" %}
 	{% include ent_list_row.html	name="postprocess_controller"		status="Ported"	summary="An entity ported from the Alien Swarm SDK SDK which provides control over various filmic post-processing effects originally made for the (l4dseries: 4)." %}
 	{% include ent_list_row.html	name="prop_combine_ball"		status="Changed"	summary="<code>SetLifetime</code> and <code>AddLifetime</code> for changing a ball's lifetime."	game="hl2" %}
 	{% include ent_list_row.html	name="prop_coreball"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="prop_detail"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="prop_door_rotating"		status="Changed"	summary="Restored spawnflag for preventing NPCs from using, <code>AllowPlayerUse</code> and <code>DisallowPlayerUse</code> inputs for toggling the \"Disallow player +USE\" spawnflag, added collisions disabled spawnflag carried over from <code>prop_dynamic</code> to FGD, disabled shadows by default." %}
-	{% include ent_list_row.html	name="prop_dynamic"		status="Changed"	summary="Uses all of the base prop changes, including the disabling of the prop consistency system (via <code>mapbase_prop_consistency_noremove</code> cvar), prop interaction inputs, unmarked spawnflags, etc. " %}
+	{% include ent_list_row.html	name="prop_dynamic"		status="Changed"	summary="Hold Animation, Update children, and <code>SetAnimationNoReset</code> ported from the Alien Swarm SDK. Also uses all of the base prop changes, including the disabling of the prop consistency system (via <code>mapbase_prop_consistency_noremove</code> cvar), prop interaction inputs, unmarked spawnflags, etc. " %}
 	{% include ent_list_row.html	name="prop_dynamic_ornament"		status="Affected"	summary="Uses all of the base prop changes detailed in <code>prop_dynamic</code>." %}
 	{% include ent_list_row.html	name="prop_dynamic_override"		status="Affected"	summary="Uses all of the base prop changes detailed in <code>prop_dynamic</code>." %}
 	{% include ent_list_row.html	name="prop_flare"		status="New"	summary="An entire class for controlling the properties of <code>flare.mdl</code> from Half-Life 2: Episode One. This is based off of the Black Mesa entity of the same name. Can control lifetime, ignite the flare, restore the flare, etc."	game="hl2" %}
@@ -567,7 +575,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="prop_physics"		status="Stock"	summary="<code>SetDebris</code> for toggling debris status. Uses all of the base prop changes detailed in <code>prop_dynamic</code>." %}
 	{% include ent_list_row.html	name="prop_physics_multiplayer"		status="Affected"	summary="Uses all of the prop changes detailed in <code>prop_physics</code> and <code>prop_dynamic</code>." %}
 	{% include ent_list_row.html	name="prop_physics_override"		status="Changed"	summary="Now supports overriding prop interactions and preferred carry angles." %}
-	{% include ent_list_row.html	name="prop_ragdoll"		status="Changed"	summary="Fixed <code>StartRagdollBoogie</code>, added <code>Wake</code>/<code>Sleep</code> inputs, added automatic ragdoll interactions." %}
+	{% include ent_list_row.html	name="prop_ragdoll"		status="Changed"	summary="Fixed <code>StartRagdollBoogie</code>, added <code>Wake</code>/<code>Sleep</code> inputs, added automatic ragdoll interactions. Also added optional +USE support, including limb pickup." %}
 	{% include ent_list_row.html	name="prop_scalable"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="prop_sphere"		status="Restored"	summary="A cheap vphysics sphere. Uses VDC changes on the linked article." %}
 	{% include ent_list_row.html	name="prop_static"		status="Stock"	summary="" %}
@@ -585,14 +593,14 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="script_intro"		status="Changed"	summary="The skybox bug can now be fixed via a keyvalue (drawing the skybox in the main view, the camera view, both, or neither) and viewmodels now show up correctly." %}
 	{% include ent_list_row.html	name="script_tauremoval"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="scripted_sentence"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="scripted_sequence"		status="Changed"	summary="Proper <code>!activator</code> support on target NPC and outputs, \"No Interruptions\" and \"Override AI\" enabled by default, <code>OnPreIdleSequence</code>, unmarked spawnflags added" %}
+	{% include ent_list_row.html	name="scripted_sequence"		status="Changed"	summary="Proper <code>!activator</code> support on target NPC and outputs, \"No Interruptions\" and \"Override AI\" enabled by default, <code>OnPreIdleSequence</code>/<code>OnEntrySequence</code>/<code>OnActionSequence</code> inputs added, unmarked spawnflags added" %}
 	{% include ent_list_row.html	name="scripted_sound"		status="New"	summary="Causes a sound to be emitted on an entity directly, allowing it to be interrupted by, say, the entity's death or removal. This is useful for lines spoken by NPCs that can't use <code>logic_choreographed_scene</code> and are too \"interactive\" for <code>ambient_generic</code> to work well." %}
 	{% include ent_list_row.html	name="scripted_target"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="shadow_control"		status="Changed"	summary="Add ability to toggle [[Dynamic RTT shadow angles in Source 2007: Saul Rennison's dynamic RTT shadow angles]]." %}
 	{% include ent_list_row.html	name="simple_physics_brush"		status="Restored"	summary="A simple physics brush with no unique properties. Previously only usable with <code>phys_convert</code>, this has been changed so it could be used in Hammer." %}
 	{% include ent_list_row.html	name="simple_physics_prop"		status="Restored"	summary="A simple physics prop with no unique properties. Previously only ussable with <code>phys_convert</code>, this has been changed so it could be placed in Hammer." %}
 	{% include ent_list_row.html	name="sky_camera"		status="Changed"	summary="Added updating capabilities, option to use angles for rotating skybox, ability to use a solid sky color instead of a sky texture, fog I/KV from <code>env_fog_controller</code>, and more." %}
-	{% include ent_list_row.html	name="skybox_swapper"		status="Ported"	summary="An entity ported from Alien Swarm SDK that swaps skybox textures. This is broken in Source 2013 SP (you have to reload a save) and apparently only works properly in MP." %}
+	{% include ent_list_row.html	name="skybox_swapper"		status="Ported"	summary="An entity ported from Alien Swarm SDK that swaps skybox textures. This is broken in Source 2013 SP and only works properly in MP." %}
 	{% include ent_list_row.html	name="tanktrain_ai"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="tanktrain_aitarget"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="test_sidelist"		status="Stock"	summary="" %}
@@ -617,14 +625,17 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="trigger_soundscape"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="trigger_teleport"		status="Changed"	summary="Fixed FGD not showing all of the spawnflags." %}
 	{% include ent_list_row.html	name="trigger_teleport_relative"		status="Ported"	summary="Teleports entities relative to their current positions. Added a custom FGD class and ported to Source 2013 SP from MP." %}
+	{% include ent_list_row.html	name="trigger_tonemap"		status="Ported"	summary="Trigger that changes the <code>env_tonemap_controller</code> of players that walk through it. Ported from the Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="trigger_transition"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="trigger_vphysics_motion"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="trigger_waterydeath"		status="Changed"	summary="Added a bunch of I/O/KV for easier modification and configuration." %}
 	{% include ent_list_row.html	name="trigger_weapon_dissolve"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="trigger_weapon_strip"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="vehicle_viewcontroller"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="vgui_screen"		status="Stock"	summary="" %}
+	{% include ent_list_row.html	name="vgui_movie_display"		status="Ported"	summary="Plays a video from the <code>media</code> folder on a VGUI screen surface. Ported directly from Alien Swarm SDK with additional support for sound + mute keyvalue." %}
+	{% include ent_list_row.html	name="vgui_screen"		status="Changed"	summary="Now supports custom outputs starting with <code>~</code> that correspond to VGUI commands." %}
 	{% include ent_list_row.html	name="vgui_slideshow_display"		status="Stock"	summary=""	game="hl2" %}
+	{% include ent_list_row.html	name="vgui_text_display"		status="New"	summary="An entity that displays a VGUI text label in the world." %}
 	{% include ent_list_row.html	name="water_lod_control"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="weapon_357"		status="Changed"	summary="Now usable by NPCs, uses base weapon changes like ammo overrides, new pickup prevention inputs/flags, and fade distances using spheres."	game="hl2" %}
 	{% include ent_list_row.html	name="weapon_alyxgun"		status="Affected"	summary="Uses base weapon changes detailed in <code>weapon_357</code>."	game="hl2" %}
