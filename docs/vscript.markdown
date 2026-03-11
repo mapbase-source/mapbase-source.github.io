@@ -17,7 +17,7 @@ For using VScript within a Half-Life 2 context, see [HL2 VScript integration](/d
 	{% include docs_feature_button.html	url="script-consts"		text="List of Script Constants"		desc="Full list of script constants."				icon="assets/entities/math_counter_advanced.png"		bg="../assets/website_bg.jpg" %}
 	{% include docs_feature_button.html	url="conflicts"		text="Conflicts with Valve's VScript"		desc="Potential conflicts involving scripts made using official VScript."			icon="assets/docs/feature_dc_icon.png"					bg="../assets/docs/feature_dc_bg.gif" %}
 	<!--{% include docs_feature_button.html	url="conflicts"		text="VScript in VBSP"		desc=""			icon="assets/docs/feature_dc_icon.png"					bg="../assets/docs/feature_dc_bg.gif" %}-->
-	<div style="clear: left;"/>
+	<div style="clear: left;"></div>
 	
 </div>
 

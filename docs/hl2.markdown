@@ -23,7 +23,7 @@ The following articles show where Mapbase's features can be particularly useful:
 	{% include docs_feature_button.html	url="hl2-settings"		text="Mapbase within HL2's settings"			desc="Examples of how Mapbase can benefit maps that represent specific parts of HL2."				icon="assets/entities/math_counter_advanced.png"		bg="../../assets/docs/feature_npcs_bg.jpg" %}
 	{% include docs_feature_wip.html	url="hl2-total-conversion"		text="Making one map a total conversion"			desc="Examples of how one map can be made drastically different from the game or mod it's a part of."				icon="assets/entities/math_counter_advanced.png"		bg="../../assets/website_bg.jpg" %}
 	{% include docs_feature_button.html	url="custom-npc"		text="Making a custom NPC"			desc="A guide explaining how Mapbase can be used to create a custom NPC without code changes."				icon="assets/entities/math_counter_advanced.png"		bg="../../assets/website_bg.jpg" %}
-	<div style="clear: left;"/>
+	<div style="clear: left;"></div>
 	
 </div>
 
@@ -38,7 +38,7 @@ The following articles show where Mapbase's features can be particularly useful:
 	{% include docs_feature_button.html	url="npcs"		text="NPC Changes"				icon="assets/entities/math_counter_advanced.png"		bg="../../assets/docs/feature_npcs_bg.jpg" %}
 	{% include docs_feature_wip.html	url="customweps"		text="Custom Weapons"				icon="assets/docs/hl2/feature_customweps_icon.png"		bg="../../assets/website_bg.jpg" %}
 	{% include docs_feature_wip.html	url="player-anims"		text="Player Animations"				icon="assets/docs/hl2/feature_customweps_icon.png"		bg="../../assets/website_bg.jpg" %}
-	<div style="clear: left;"/>
+	<div style="clear: left;"></div>
 	
 </div>
 

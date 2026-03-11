@@ -143,7 +143,7 @@ This includes the following new node types:
 	</div>
 </div>
 
-<div style="clear: left;"/>
+<div style="clear: left;"></div>
 
 <p align="center">The images below show Text and Image Nodes in-game. Click on an image to expand it.</p>
 <p align="center">
@@ -151,7 +151,7 @@ This includes the following new node types:
 {% include lightbox.html	src="assets/docs/utils/preview_image_info_001a.png"	style="width:25%;" %}
 </p>
 
-<div style="clear: left;"/>
+<div style="clear: left;"></div>
 
 ### New I/KV
 <code>point_commentary_node</code> now has additional inputs and keyvalues, including the ones mentioned above. This includes the following:

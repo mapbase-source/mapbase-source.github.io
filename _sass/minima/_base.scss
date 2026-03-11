@@ -451,12 +451,15 @@ abbr {
  * Feature Buttons
  */
 .feature_list {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
 }
 .feature_column {
   float:left; margin:0; height:auto; width:45%; padding:2.5%;
+  min-width:250px;
 }
 .feature_column_triple {
   width:30%; padding:1.66%;
+  min-width:200px;
 }
 .feature_button {
   display:block;

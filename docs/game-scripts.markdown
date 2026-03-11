@@ -15,7 +15,7 @@ This category covers changes to the game's keyvalue scripts, which are usually l
 	{% include docs_feature_button.html	url="weapon-scripts"		text="Weapon Script Changes"		desc="Changes to weapon scripts."			icon="assets/docs/feature_dc_icon.png"					bg="../assets/docs/feature_dc_bg.gif" %}
 	{% include docs_feature_wip.html	url="response-system"		text="Response System"		desc="Changes to the Response System."			icon="assets/entities/game_menu.png"					bg="../assets/website_bg.jpg" %}
 	{% include docs_feature_wip.html	url="choreo-sentences"		text="Choreo Sentences"		desc="New scene-based sentences."			icon="assets/entities/game_menu.png"					bg="../assets/website_bg.jpg" %}
-	<div style="clear: left;"/>
+	<div style="clear: left;"></div>
 	
 </div>
 
