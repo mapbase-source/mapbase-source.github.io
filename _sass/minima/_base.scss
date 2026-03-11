@@ -481,6 +481,12 @@ abbr {
   filter: drop-shadow(3px 3px 8px black);
   z-index: 2;
 }
+.feature_icon_text {
+  position:relative; left:4px;
+  font-size: 75px; text-align: center; text-decoration: none;
+  filter: drop-shadow(3px 3px 8px black);
+  z-index: 2;
+}
 .feature_text {
   width:60%; height:100%; padding-left:10%; padding-right:5%; padding-top:2.5%;
   z-index: 2; color: $text-color;

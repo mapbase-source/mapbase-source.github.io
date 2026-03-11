@@ -22,6 +22,7 @@ header-center: true
 	{% include docs_feature_button.html	url="utils"		text="Utilities"			desc="Miscellaneous quality-of-life tools."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	{% include docs_feature_button.html	url="game-scripts"		text="Game Scripts"			desc="Changes to scripts in the game files."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	{% include docs_feature_wip.html	url="visuals"		text="Visuals"			desc="Visual or rendering features."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
+	{% include docs_feature_wip.html	url="compilers"		text="Compile Tools"			desc="Changes to the compile tools."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	<div style="clear: left;"/>
 	
 </div>

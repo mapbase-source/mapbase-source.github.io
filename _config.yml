@@ -38,7 +38,7 @@ plugins:
 
 header_pages:
   - about.markdown
-  - getting-started.markdown
+  - setup.markdown
   - docs.markdown
   - credits.markdown
 
