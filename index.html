@@ -49,8 +49,8 @@ layout: home
   .wip_box {
     position: relative; overflow: hidden;
     display: flex; justify-content: center; align-items: center;
-    padding: 8px; color: #ffffff; height: auto;
-	margin-top: 32px; margin-left: 64px; margin-right: 64px;
+    padding: 8px; color: #ffffff; height: auto; width: auto;
+	margin-top: 32px;
 	background-color: rgba(0,0,0,0.8);
 	opacity: 1.0; filter: alpha(opacity=100); border: 5px dashed yellow; border-radius: 25px;
 	text-shadow: 4px 4px 8px black;
@@ -71,6 +71,7 @@ layout: home
 	*/
   .sea {
     position: absolute;
+	overflow: hidden;
 	top: 80px;
 	left: 0px;
 	width: 100%; height: 600px;
@@ -127,6 +128,7 @@ layout: home
 	*/
   #landing_navbar ul {
     display: flex;
+	flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -150,6 +152,12 @@ layout: home
   
   #landing_navbar ul li a:hover {
     background-color: #111111;
+  }
+  
+  @media (max-width: 600px) {
+    #landing_navbar ul {
+      flex-direction: column;
+    }
   }
 	/*
 		Socials
@@ -185,17 +193,17 @@ layout: home
 
 <div id="sea" class="sea">
 </div>
-
-<div class="top_container">
 	<br>
-	<p style="display:flex; gap:0px; justify-content:center; align-items: center;">
-		<button id="top_icon_button" style="background:none; border:none; cursor: pointer;">
+	<p style="display:flex; gap:0px; justify-content:center; align-items: center; flex-wrap: wrap;">
+		<button id="top_icon_button" style="background:none; border:none; cursor: pointer; max-width: 400px;">
 			<div id="top_icon_hinge" class="top_icon_hinge">
 				<img id="top_icon_img" class="top_icon" src="assets/website_home_icon.png" width="300"/>
 			</div>
 		</button>
 		<img src="assets/website_home_text.png" width="600" height="50%"/>
 	</p>
+
+<div class="top_container">
 	<br>
 	<br>
 	<div class="top_box">
