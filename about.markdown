@@ -61,7 +61,7 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 			<span class="feature_background_color"></span>
 			<span class="feature_background" style="background-image: url('../assets/docs/feature_shaders_bg.gif')"></span>
 			<div style="width:20%;">
-				<img class="feature_icon" src="{{ "/" | relative_url }}assets/entities/math_counter_advanced.png"/>
+				<img class="feature_icon" src="{{ "/" | relative_url }}assets/docs/feature_visuals_icon.png"/>
 			</div>
 			<div class="feature_text">
 				<p><a href="{{ "/" | relative_url }}docs/visuals/shaders">Modified shaders</a> that focus on fixes and optional capabilities</p>
@@ -74,7 +74,7 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 			<span class="feature_background_color"></span>
 			<span class="feature_background" style="background-image: url('../assets/website_bg.jpg')"></span>
 			<div style="width:20%;">
-				<img class="feature_icon" src="{{ "/" | relative_url }}assets/entities/math_counter_advanced.png"/>
+				<img class="feature_icon" src="{{ "/" | relative_url }}assets/setup/button_modding_icon.png"/>
 			</div>
 			<div class="feature_text">
 				<p><a href="{{ "/" | relative_url }}docs/game-scripts/map-specific-files">Map-specific scripts</a> that allow individual maps to make larger changes</p>
@@ -87,7 +87,7 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 			<span class="feature_background_color"></span>
 			<span class="feature_background" style="background-image: url('../assets/docs/feature_gameplay_bg.gif')"></span>
 			<div style="width:20%;">
-				<img class="feature_icon" src="{{ "/" | relative_url }}assets/entities/math_counter_advanced.png"/>
+				<img class="feature_icon" src="{{ "/" | relative_url }}assets/docs/hl2/feature_customweps_icon.png"/>
 			</div>
 			<div class="feature_text">
 				<p>Optional extensions for existing gameplay features</p>
@@ -101,6 +101,6 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 
 Mapbase primarily supports {% include hl2.html %} **Half-Life 2** and {% include tf2.html %} **Team Fortress 2**, but since Mapbase is built with code changes, you <u><strong>must</strong></u> use Mapbase within a sourcemod, not through the games themselves.
 
-For more information on how to start using Mapbase, see [Getting Started](/getting-started).
+For more information on how to start using Mapbase, see [Getting Started](/setup/).
 
 <script src="../js/docs.js"></script>
