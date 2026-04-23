@@ -3,6 +3,9 @@
 	{% if include.type %}
 	 <span class="ent_kv_intn">&lt;{{ include.type }}&gt;</span>
 	{% endif %}
+	{% if include.from %}
+	 <span class="ent_kv_io_name"><I>(from {{ include.from }})</I></span>
+	{% endif %}
 	<br>
 	{% if include.desc %}
 	<span class="ent_kv_desc">{{ include.desc }}</span>

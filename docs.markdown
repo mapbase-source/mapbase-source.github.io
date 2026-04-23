@@ -18,7 +18,7 @@ header-center: true
 
 <div class="feature_list" style="margin:0px auto;">
 
-	{% include docs_feature_wip.html	url="iokv"		text="I/O/KV"			desc="New Inputs, Outputs, and KeyValues added to existing entities."	icon="assets/entities/iokv01.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
+	{% include docs_feature_button.html	url="iokv"		text="I/O/KV"			desc="New Inputs, Outputs, and KeyValues added to existing entities."	icon="assets/entities/iokv01.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	{% include docs_feature_button.html	url="utils"		text="Utilities"			desc="Miscellaneous quality-of-life tools."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	{% include docs_feature_button.html	url="game-scripts"		text="Game Scripts"			desc="Changes to scripts in the game files."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	{% include docs_feature_wip.html	url="visuals"		text="Visuals"			desc="Visual or rendering features."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
