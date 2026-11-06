@@ -1,0 +1,28 @@
+	<div class="feature_column" style="height:175px;">
+		<a class="feature_button" style="flex-wrap:wrap;width:100%;height:100%;" title="{{ include.title }}" href="{{ include.url }}" onmouseover="ShowBackground(this)" onmouseleave="HideBackground(this)">
+			<div class="feature_box" style="flex-wrap:wrap;width:100%;height:100%;">
+				<!--<span class="feature_background_color feature_text_noalign" style="background:none;align-items:flex-end;display:flex;justify-content:center;">{{ include.subtitle }}</span>-->
+				<span class="feature_background_color"></span>
+				<span class="feature_background" style="background-image: url('{{ include.bg }}');"></span>
+				<img class="feature_wide_logo" src="{{ "/" | relative_url }}{{ include.logo }}"/>
+			</div>
+		</a>
+	</div>
+
+<!--
+	With additional text:
+	<div class="feature_column" style="min-width:45%;height:175px;">
+		<a class="feature_button" style="flex-wrap:wrap;width:100%;height:100%;" title="{{ include.title }}" href="{{ include.url }}" onmouseover="ShowBackground(this)" onmouseleave="HideBackground(this)">
+			<div class="feature_box">
+				<span class="feature_background_color"></span>
+				<span class="feature_background" style="background-image: url('{{ include.bg }}')"></span>
+				<a href="{{ include.url }}" class="feature_wide_logo" title="Entropy : Zero 2">
+					<img src="{{ "/" | relative_url }}{{ include.logo }}"/>
+				</a>
+				<div class="feature_text_noalign">
+					<p><a href="https://store.steampowered.com/app/1583720/Entropy__Zero_2/"><I>Entropy : Zero 2</I></a>...</p>
+				</div>
+			</div>
+		</a>
+	</div>
+-->

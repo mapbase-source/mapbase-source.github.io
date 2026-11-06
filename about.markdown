@@ -64,7 +64,7 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 				<img class="feature_icon" src="{{ "/" | relative_url }}assets/docs/feature_visuals_icon.png"/>
 			</div>
 			<div class="feature_text">
-				<p><a href="{{ "/" | relative_url }}docs/visuals/shaders">Modified shaders</a> that focus on fixes and optional capabilities</p>
+				<p><a href="{{ "/" | relative_url }}docs/visuals">Modified visuals</a> that focus on fixes and optional capabilities</p>
 			</div>
 		</div>
 	</div>
@@ -95,6 +95,47 @@ Here's a brief overview of the kinds of changes Mapbase makes:
 		</div>
 	</div>
 </div>
+
+---
+<br>
+
+Mapbase started development in 2018 and it was released in 2019. Since then, it's amassed a wide variety of changes from contributors all over the community, and it's been used by countless maps and Source mods in the years since.
+
+<!--For example, out of all [ModDB](https://www.moddb.com/) Mod of the Year contestants from 2020 to 2025 that were based on Half-Life 2, Mapbase was used by **7** of the **11** candidates. For its Best Upcoming Mod award, Mapbase was used by **10** of the **14** candidates.--> <!-- I originally looked into this as a curiosity, but it feels too narcissistic to put it here right now -->
+
+Here's a few prominent projects in the HL2 and TF2 modding spaces that use Mapbase:
+
+<div class="feature_list" style="margin:0px auto;">
+
+	{% include mod_button.html	url="https://store.steampowered.com/app/1583720/Entropy__Zero_2/"
+		title="Entropy : Zero 2"
+		logo="assets/mods/logo_ez2.png"
+		bg="../assets/mods/bg_ez2.jpg" %}
+	{% include mod_button.html	url="https://store.steampowered.com/app/3545060/Team_Fortress_2_Classified/"
+		title="Team Fortress 2 Classified"
+		logo="assets/mods/logo_tf2c.png"
+		bg="../assets/mods/bg_tf2c.jpg" %}
+	{% include mod_button.html	url="https://www.moddb.com/mods/half-life-2-raising-the-bar-redux"
+		title="Raising the Bar: Redux"
+		logo="assets/mods/logo_rtbr.png"
+		bg="../assets/mods/bg_rtbr.jpg" %}
+	{% include mod_button.html	url="https://store.steampowered.com/app/3561600/Fortress_Connected/"
+		title="Fortress Connected"
+		logo="assets/mods/logo_fc.png"
+		bg="../assets/mods/bg_fc.jpg" %}
+	{% include mod_button.html	url="https://www.moddb.com/mods/entropy-zero-uprising"
+		title="Entropy : Zero - Uprising"
+		logo="assets/mods/logo_ezu.png"
+		bg="../assets/mods/bg_ezu.jpg" %}
+	{% include mod_button.html	url="https://www.moddb.com/mods/map-labs"
+		title="Map Labs"
+		logo="assets/mods/logo_maplabs.png"
+		bg="../assets/mods/bg_maplabs.jpg" %}
+	
+</div>
+<br>
+
+Additionally, code and features from Mapbase have been ported to Source engine projects beyond traditional modding spaces, including [No More Room In Hell](https://store.steampowered.com/app/224260/No_More_Room_in_Hell/) and [Strata Source](https://stratasource.org/).
 
 ---
 <br>
