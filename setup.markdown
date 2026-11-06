@@ -15,3 +15,5 @@ Click on the button that best suits how you would like to use Mapbase:
 	<div style="clear: left;"/>
 	
 </div>
+
+Also see [Mapbase Setup Troubleshooting](/setup/troubleshooting/) and [Mapbase Multi-Tool](/setup/multi-tool/).

@@ -12,6 +12,6 @@
 		{% include tf2.html %}
     {% endcase %}
 	</td>
-	<td class="ent_list_status ent_list_status-{{ include.status }}">{{ include.status }}</td>
+	{% if include.status %}<td class="ent_list_status ent_list_status-{{ include.status }}">{{ include.status }}</td>{% endif %}
 	<td class="ent_list_summary">{{ include.summary }}</td>
 </tr>

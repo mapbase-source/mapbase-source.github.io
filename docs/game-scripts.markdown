@@ -11,10 +11,10 @@ This category covers changes to the game's keyvalue scripts, which are usually l
 
 <div class="feature_list" style="margin:0px auto;">
 
-	{% include docs_feature_wip.html	url="map-specific-files"		text="Map-Specific Files"		desc="Support for individual maps to override mod scripts."				icon="assets/entities/math_counter_advanced.png"		bg="../assets/website_bg.jpg" %}
-	{% include docs_feature_button.html	url="weapon-scripts"		text="Weapon Script Changes"		desc="Changes to weapon scripts."			icon="assets/docs/feature_dc_icon.png"					bg="../assets/docs/feature_dc_bg.gif" %}
-	{% include docs_feature_wip.html	url="response-system"		text="Response System"		desc="Changes to the Response System."			icon="assets/entities/game_menu.png"					bg="../assets/website_bg.jpg" %}
-	{% include docs_feature_wip.html	url="choreo-sentences"		text="Choreo Sentences"		desc="New scene-based sentences."			icon="assets/entities/game_menu.png"					bg="../assets/website_bg.jpg" %}
+	{% include docs_feature_button.html	url="map-specific-files"		text="Map-Specific Files"		desc="Support for individual maps to override mod scripts."				icon="assets/setup/button_modding_icon.png"		bg="../../assets/website_bg.jpg" %}
+	{% include docs_feature_button.html	url="weapon-scripts"		text="Weapon Script Changes"		desc="Changes to weapon scripts."			icon="assets/docs/hl2/feature_customweps_icon.png"					bg="../../assets/website_bg.jpg" %}
+	{% include docs_feature_wip.html	url="response-system"		text="Response System"		desc="Changes to the Response System."			icon="assets/entities/game_menu.png"					bg="../../assets/website_bg.jpg" %}
+	{% include docs_feature_wip.html	url="choreo-sentences"		text="Choreo Sentences"		desc="New scene-based sentences."			icon="assets/entities/game_menu.png"					bg="../../assets/website_bg.jpg" %}
 	<div style="clear: left;"></div>
 	
 </div>
@@ -69,7 +69,7 @@ This is a list of script files that Mapbase changes or overrides in some way. Fi
 <table id="entlist">
 	<thead>
 		<tr style="text-align: center;">
-			<th style="cursor: pointer;" onclick="SortTableClassname()">Classname</th>
+			<th style="cursor: pointer;" onclick="SortTableClassname()">Name</th>
 			<th style="cursor: pointer;" onclick="SortTableStatus()">Status</th>
 			<th>Summary</th>
 		</tr>

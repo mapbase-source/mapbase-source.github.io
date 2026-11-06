@@ -18,11 +18,12 @@ header-center: true
 
 <div class="feature_list" style="margin:0px auto;">
 
-	{% include docs_feature_button.html	url="iokv"		text="I/O/KV"			desc="New Inputs, Outputs, and KeyValues added to existing entities."	icon="assets/entities/iokv01.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
-	{% include docs_feature_button.html	url="utils"		text="Utilities"			desc="Miscellaneous quality-of-life tools."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
-	{% include docs_feature_button.html	url="game-scripts"		text="Game Scripts"			desc="Changes to scripts in the game files."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
-	{% include docs_feature_button.html	url="visuals"		text="Visuals"			desc="Visual or rendering features."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
-	{% include docs_feature_wip.html	url="compilers"		text="Compile Tools"			desc="Changes to the compile tools."	icon="assets/entities/game_menu.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
+	{% include docs_feature_button.html	url="iokv"		text="I/O/KV"			desc="New Inputs, Outputs, and KeyValues added to existing entities."	icon="assets/entities/iokv01.png"					bg="../assets/docs/feature_logicalio_bg.jpg" %}
+	{% include docs_feature_button.html	url="visuals"		text="Visuals"			desc="Visual or rendering features."	icon="assets/docs/feature_visuals_icon.png"					bg="../assets/docs/feature_projtex_bg.jpg" %}
+	{% include docs_feature_button.html	url="compilers"		text="Compile Tools"			desc="Changes to the compile tools."	icon="assets/docs/feature_compilers_icon.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
+	{% include docs_feature_button.html	url="game-scripts"		text="Game Scripts"			desc="Changes to scripts in the game files."	icon="assets/setup/button_modding_icon.png"					bg="../assets/setup/button_modding_bg.jpg" %}
+	{% include docs_feature_button.html	url="code"		text="Source Code"			desc="Changes to the codebase itself. (yes, I know the icon is cursed)"	icon="assets/docs/feature_code_icon.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
+	{% include docs_feature_button.html	url="utils"		text="Utilities"			desc="Miscellaneous quality-of-life tools."	icon="assets/docs/feature_dc_icon.png"					bg="../assets/dev_measuregeneric_purple01.jpg" %}
 	<div style="clear: left;"></div>
 	
 </div>
