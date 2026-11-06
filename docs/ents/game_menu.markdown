@@ -31,11 +31,11 @@ An entity that opens number menus.
 
 ### Flags
 {% include ent_sf.html	name="[1] All Players"	bit="1" %}
-{% include ent_sf.html	name="[2] Centered"	bit="2" %}
-{% include ent_sf.html	name="[4] Center Fill"	bit="4" %}
-{% include ent_sf.html	name="[8] Use big fonts (if available)"	bit="8" %}
-{% include ent_sf.html	name="[16] No flash"	bit="16" %}
-{% include ent_sf.html	name="[32] Word wrap"	bit="32" %}
+{% include ent_sf.html	name="[2] Centered"	bit="2" version="upcoming" %}
+{% include ent_sf.html	name="[4] Center Fill"	bit="4" version="upcoming" %}
+{% include ent_sf.html	name="[8] Use big fonts (if available)"	bit="8" version="upcoming" %}
+{% include ent_sf.html	name="[16] No flash"	bit="16" version="upcoming" %}
+{% include ent_sf.html	name="[32] Word wrap"	bit="32" version="upcoming" %}
 
 ### Inputs
 {% include ent_io.html	name="ShowMenu"	desc="Shows the menu to the player."	type="void" %}
