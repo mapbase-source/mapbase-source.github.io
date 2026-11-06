@@ -210,11 +210,6 @@ layout: home
 		<p>Mapbase is an open-source enhancement for the Source SDK that targets mappers and modders.</p>
 		<p>Its primary goal is to add quality-of-life features through changes to the Source 2013 codebase.</p>
 	</div>
-	<div class="wip_box">
-		<span class="wip_box_overlay"></span>
-		<p class="wip_box_text">This site is still under construction and may not have all expected content.<br>
-		Use <a href="https://github.com/mapbase-source/source-sdk-2013">Mapbase's original wiki</a> or <a href="https://developer.valvesoftware.com/wiki/Mapbase/Docs">incomplete VDC documentation</a> if needed.</p>
-	</div>
 	<ul>
   {% for post in site.posts %}
     <li>
@@ -244,13 +239,17 @@ layout: home
         {%- endfor -%}
     </ul>
 </nav>
-
 <hr>
+	<div class="wip_box">
+		<span class="wip_box_overlay"></span>
+		<p class="wip_box_text">This site is still under construction and may not have all expected content.<br>
+		Use <a href="https://github.com/mapbase-source/source-sdk-2013">Mapbase's original wiki</a> or <a href="https://discord.gg/nd8tXNg">join its Discord server</a> if needed.</p>
+	</div>
 <br>
 
 <p class="top_box" style="display:flex; gap:32px; justify-content:center; align-items: center;">
 	<a class="socials_icon" href="https://www.moddb.com/mods/mapbase" title="Mapbase on ModDB"><img class="socials_icon_img" src="https://media.moddb.com/images/global/moddb.png" alt="ModDB" width="50"></a>
-	<a class="socials_icon" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="Mapbase on ModDB"><img class="socials_icon_img" src="assets/socials_github.webp" alt="GitHub" width="50"></a>
+	<a class="socials_icon" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="Mapbase on GitHub"><img class="socials_icon_img" src="assets/socials_github.webp" alt="GitHub" width="50"></a>
 	<a class="socials_icon" href="https://discord.gg/nd8tXNg" title="Mapbase Discord Server"><img class="socials_icon_img" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62f0a9e560a799075a4e0cea_Discord-Logo-White (3).png" alt="Discord" width="50"></a>
 	<a class="socials_icon" href="https://mapbase-source.notion.site/Mapbase-Development-34e27a9892864c96b1e0021ea780d880" title="Mapbase Notion Site"><img class="socials_icon_img" src="https://media.moddb.com/images/members/4/3640/3639342/profile/ExternalIcon_Notion_001a.png" alt="Notion" width="50"></a>
 	<a class="socials_icon" href="https://developer.valvesoftware.com/wiki/Mapbase" title="Mapbase on Valve Developer Community"><img class="socials_icon_img" src="https://media.moddb.com/images/members/4/3640/3639342/profile/ExternalIcon_VDC_001a.png" alt="VDC" width="50"></a>
