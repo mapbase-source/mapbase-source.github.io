@@ -11,6 +11,16 @@ game:
 
 An entity to control the shadows in the map.
 
+---
+
+<div class="feature_list" style="margin:0px auto;">
+	<div class="feature_column"	style="width:75%;">
+		{% include lightbox.html	src="assets/docs/visuals/dynamicrttshadows01a.jpg"	styleEnlarged=";width:75%;" %}
+	</div>
+</div>
+
+Mapbase uses Saul Rennison's dynamic RTT shadow angles from the VDC, which means shadows draw their direction from nearby lights and don't stay in one constant direction. This feature is off by default and must be enabled through an input/keyvalue in shadow_control, an option from later Source games.
+
 <br>
 
 ---

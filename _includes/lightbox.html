@@ -1,3 +1,3 @@
 <button class="enlarged-img-button" style="{{ include.style }}" onclick="Enlarge(this)">
-<img src="{{ "/" | relative_url }}{{ include.src }}" alt="{{ include.alt }}" title="{{ include.title }}"/>
+<img src="{{ "/" | relative_url }}{{ include.src }}" alt="{{ include.alt }}" title="{{ include.title }}" data-lightbox-scale="{{ include.scale | default: '100%' }}" data-lightbox-custom="{{ include.styleEnlarged }}"/>
 </button>

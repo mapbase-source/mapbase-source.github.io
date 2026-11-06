@@ -9,7 +9,39 @@ mb_version: -1
 game: 
 ---
 
-Projected texture entity.
+<script src="../../../js/lightbox.js"></script>
+
+**Projected textures** are basically dynamic lights which can cast dynamic shadows. Mappers can place their own projected textures via the `env_projectedtexture` entity. [Click here for more information on projected textures in Source.](https://developer.valvesoftware.com/wiki/Env_projectedtexture)
+
+Mapbase's projected textures are in large part based on code originating from the Alien Swarm SDK, snippets from the Valve Developer Community, and the original *G-String* code release. From this, Mapbase adds its own improvements, like texture clipping fixes or Constant/Linear/Quadratic attenuation control.
+
+While the traditional VDC fix automatically updates the projected texture when parented, Mapbase uses Alien Swarm's "Always Update" spawnflag for control over whether the projected texture updates. However, projected textures made before Mapbase (detected by checking a static keyvalue) will still use the VDC fix for automatically updating when there's a parent.
+
+Mapbase raises the number of shadow depth textures to `5`. Since the player's flashlight occupies one of those textures, you could safely use up to `4` projected textures at any time. However, you could also use the `-numshadowtextures` launch parameter (based on the Gmod parameter of the same name) before starting the game to set the shadow map limit yourself. This parameter could be set through `gameinfo.txt`'s newly supported `CommandLine` keyvalue.
+
+---
+
+# Shader changes for projected textures
+
+*See also: [Other Shader Changes](/docs/visuals/shaders/)*
+
+The shader changes alone fix most of the bugs the VDC fixes couldn't fix, including the "reverse projection" bug and the bug with decals not receiving casted shadows. These shader changes also use a new shadow calculation method which makes shadows appear much sharper.
+
+The changes also fix a long-standing bug with Source 2013 projected textures that calculates the attenuation with the player's view, rather than the light's origin. This is very noticeable in the comparison pictures below. *(Click on an image to expand it)*
+
+<div class="feature_list" style="margin:0px auto;">
+	<div class="feature_column">
+		{% include lightbox.html	src="assets/docs/visuals/ProjectedTextureComparison02a.png" %}
+	</div>
+</div>
+
+<div class="feature_list" style="margin:0px auto;">
+	<div class="feature_column">
+		{% include lightbox.html	src="assets/docs/visuals/ProjectedTextureComparison01a.png" %}
+	</div>
+</div>
+
+By default, Mapbase uses a shadow map resolution of `2048` with a filter size of `0.5`. This can be changed in `imaterialsystem.h`. See [this section on the Valve Developer Community](https://developer.valvesoftware.com/wiki/Env_projectedtexture/fixes#Lowering_the_amount_of_.22grain.22_on_shadows) for more information.
 
 <br>
 

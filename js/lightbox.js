@@ -22,6 +22,14 @@ function Enlarge(target)
 	{
 		enlargedImg = img.cloneNode(false);
 		enlargedImg.className = 'enlarged-img';
+		//enlargedImg.style.transform = "scale(" + img.getAttribute('data-lightbox-scale') + ")";
+		customStyle = img.dataset.lightboxCustom;
+		console.log(customStyle)
+		if (customStyle && customStyle != "")
+		{
+			console.log("custom style valid")
+			enlargedImg.style.cssText += customStyle;
+		}
 		enlargedParent.appendChild(enlargedImg);
 	}
 	
