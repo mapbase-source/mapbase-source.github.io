@@ -9,6 +9,8 @@ mb_version: -1
 game: 
 ---
 
+<script src="../../../js/lightbox.js"></script>
+
 An entity to control the shadows in the map.
 
 ---
@@ -19,7 +21,7 @@ An entity to control the shadows in the map.
 	</div>
 </div>
 
-Mapbase uses Saul Rennison's dynamic RTT shadow angles from the VDC, which means shadows draw their direction from nearby lights and don't stay in one constant direction. This feature is off by default and must be enabled through an input/keyvalue in shadow_control, an option from later Source games.
+Mapbase uses [Saul Rennison's dynamic RTT shadow angles from the VDC](https://developer.valvesoftware.com/wiki/Dynamic_RTT_shadow_angles_in_Orange_Box_branch), which means shadows draw their direction from nearby lights and don't stay in one constant direction. This feature is off by default and must be enabled through an input/keyvalue in shadow_control, an option from later Source games.
 
 <br>
 

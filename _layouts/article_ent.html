@@ -32,7 +32,7 @@ layout: default_boxed
 	{% if page.mb_version and page.mb_version != "" %}
 		{% if page.mb_version == -1 %}
 			<!-- Stock entity -->
-			{% assign grammar_article = "an existing" %}
+			{% assign grammar_article = "an <a href='https://developer.valvesoftware.com/wiki/"| append: page.title | append: "'>existing</a>" %}
 			{% assign mapbase_ver = "all versions of Mapbase" %}
 		{% else %}
 			{% assign mapbase_ver = page.mb_version | prepend: 'Mapbase ' | append: " or later" %}

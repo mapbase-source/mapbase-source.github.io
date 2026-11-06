@@ -11,9 +11,7 @@ game:
 
 <script src="../../../js/lightbox.js"></script>
 
-**Projected textures** are basically dynamic lights which can cast dynamic shadows. Mappers can place their own projected textures via the `env_projectedtexture` entity. [Click here for more information on projected textures in Source.](https://developer.valvesoftware.com/wiki/Env_projectedtexture)
-
-Mapbase's projected textures are in large part based on code originating from the Alien Swarm SDK, snippets from the Valve Developer Community, and the original *G-String* code release. From this, Mapbase adds its own improvements, like texture clipping fixes or Constant/Linear/Quadratic attenuation control.
+**Projected textures** are basically dynamic lights which can cast dynamic shadows. Mapbase's projected textures are in large part based on code originating from the Alien Swarm SDK, snippets from the Valve Developer Community, and the original *G-String* code release. From this, Mapbase adds its own improvements, like texture clipping fixes or Constant/Linear/Quadratic attenuation control.
 
 While the traditional VDC fix automatically updates the projected texture when parented, Mapbase uses Alien Swarm's "Always Update" spawnflag for control over whether the projected texture updates. However, projected textures made before Mapbase (detected by checking a static keyvalue) will still use the VDC fix for automatically updating when there's a parent.
 

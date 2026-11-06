@@ -9,7 +9,17 @@ mb_version: -1
 game: 
 ---
 
-An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox's position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be.
+Outside of Mapbase, `sky_camera` is static. Once it's been placed, the skybox can't move. You can move the `sky_camera` itself through things like logic_measure_movement, but it doesn't update the skybox. There is a trick to update the skybox by continuously removing and respawning the `sky_camera`, but this is a complicated workaround and usually isn't very smooth. `sky_camera` is also not capable of rotating the skybox.
+
+## Moving skyboxes
+
+In Mapbase, `sky_camera` has been updated to support parenting and continuous updating. There's also a new keyvalue to use the `sky_camera`'s angles for actual skybox rotation rather than fog direction. Together, these changes create the ability for the skybox to move around freely relative to the world.
+
+## Multiple skyboxes
+
+Multiple skybox support from HL2: Downfall has been added as well. If you have multiple `sky_camera` entities, you can assign one of them as the main one with the 'Master' keyvalue, and then activate one of them later using the `ActivateSkybox` input.
+
+Being able to set different skyboxes between different players is not yet supported.
 
 <br>
 

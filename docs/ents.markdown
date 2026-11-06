@@ -1,10 +1,25 @@
 ---
 layout: article
-title: Entity List
+title: Entities
 permalink: /docs/ents/
 breadcrumb: true
 wide: true
 ---
+
+<script src="../../js/docs.js"></script>
+
+<div class="feature_list" style="margin:0px auto;">
+
+	{% include docs_feature_button.html style="width:20%; padding:1.5%;min-width:150px;"	url="../filters"		text="Filters"		desc="Changes to filter entities."				icon="assets/entities/filter_generic.png"		bg="../assets/website_bg.jpg" %}
+	{% include docs_feature_button.html style="width:20%; padding:1.5%;min-width:150px;"	url="sky_camera"		text="Skyboxes"		desc="Changes to skyboxes."				icon="assets/entities/env_cubemap.png"		bg="../../assets/docs/feature_skybox_bg.jpg" %}
+	<div style="clear: left;"></div>
+	
+</div>
+
+---
+<br>
+
+# Entity List
 
 The following list contains every entity that can be placed in Hammer when using Mapbase, including both new and pre-existing entities. Each entity's status indicates how Mapbase has affected it compared to default Source 2013. Note that this generally does not count base I/O/KV changes that apply to several unrelated entities.
 
@@ -131,7 +146,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_citadel_energy_core"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="env_closecaption"		status="New"	summary="Emits captions/subtitles manually without requiring an accompanying sound." %}
 	{% include ent_list_row.html	name="env_credits"		status="Changed"	summary="The ability to use custom credits files, separate credits into columns, show images, and set the number of lingering ending lines have been added." %}
-	{% include ent_list_row.html	name="env_cubemap"		status="Changed"	summary="[[Parallax Corrected Cubemaps]] are now supported. Also see [[Mapbase/Docs/Autocubemap: Autocubemap]]." %}
+	{% include ent_list_row.html	name="env_cubemap"		status="Changed"	summary="<a href=\"/docs/visuals/shaders#Parallax-Corrected-Cubemaps\">Parallax Corrected Cubemaps</a> are now supported. Also see <a href=\"/docs/utils/autocubemap/\">Autocubemap</a>." %}
 	{% include ent_list_row.html	name="env_dof_controller"		status="Ported"	summary="An entity ported from the Alien Swarm SDK which allows for a complex depth-of-field effect." %}
 	{% include ent_list_row.html	name="env_dustpuff"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_effectscript"		status="Stock"	summary="" %}
@@ -190,9 +205,9 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="env_texturetoggle"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="env_tonemap_controller"		status="Changed"	summary="Keyvalues added for every setting that would otherwise be set via input. Also added <code>UseDefaultBloomScale</code> and <code>SetBloomScaleRange</code> to Hammer and fixed <code>SetBloomScaleRange</code> only accepting single floats." %}
 	{% include ent_list_row.html	name="env_viewpunch"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="env_wind"		status="Changed"	summary="Added \"wind radius\", a feature from (l4d: 4) that allows for multiple <code>env_wind</code> entities in different areas. Also added inputs to change all wind parameters and a \"Tree sway scale\" for how much an <code>env_wind</code> entity should affect [[$treesway]] materials. Also added \"inner\" radius, which allows the <code>env_wind</code>'s intensity to fade out in combination with regular wind radius." %}
+	{% include ent_list_row.html	name="env_wind"		status="Changed"	summary="Added \"wind radius\", a feature from (l4d: 4) that allows for multiple <code>env_wind</code> entities in different areas. Also added inputs to change all wind parameters and a \"Tree sway scale\" for how much an <code>env_wind</code> entity should affect <a href=\"/docs/visuals/shaders/\"><code>$treesway</code></a> materials. Also added \"inner\" radius, which allows the <code>env_wind</code>'s intensity to fade out in combination with regular wind radius." %}
 	{% include ent_list_row.html	name="env_zoom"		status="Changed"	summary="Added <code>UnZoomWithRate</code> and <code>SetZoomRate</code> inputs for unzooming at the zoom rate and setting the zoom rate after spawning." %}
-	{% include ent_list_row.html	name="filter_activator_class"		status="Affected"	summary="Uses all base filter changes, including <code>SetField</code> to change the primary \"field\" of most filters (e.g. the classname on <code>filter_activator_class</code>) and <code>TestEntity</code> to test a specific entity against the filter. See [Mapbase/Entities/Filters: the dedicated article] for more information." %}
+	{% include ent_list_row.html	name="filter_activator_class"		status="Affected"	summary="Uses all base filter changes, including <code>SetField</code> to change the primary \"field\" of most filters (e.g. the classname on <code>filter_activator_class</code>) and <code>TestEntity</code> to test a specific entity against the filter. See <a href=\"/docs/filters/\">the dedicated article</a> for more information." %}
 	{% include ent_list_row.html	name="filter_activator_classify"		status="New"	summary="Filters an entity by its \"Classify\" class, e.g. <code>CLASS_PLAYER_ALLY</code>." %}
 	{% include ent_list_row.html	name="filter_activator_context"		status="New"	summary="Filters an entity by its response contexts. There is a filter_activator_context available in (l4d: 4) and newer games, but this entity works differently and has new options/capabilities." %}
 	{% include ent_list_row.html	name="filter_activator_hintgroup"		status="New"	summary="Filters an NPC by its hint group." %}
@@ -211,14 +226,14 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="filter_damage_mod"		status="New"	summary="Modifies damage taken by the filter's owner. Can use a secondary filter for various purposes." %}
 	{% include ent_list_row.html	name="filter_damage_transfer"		status="Affected"	summary="Transfers damage taken by the filter's owner to the specified entity. Can use a secondary filter for various purposes." %}
 	{% include ent_list_row.html	name="filter_damage_type"		status="Changed"	summary="New option for setting how to compare the damage type (should contain one, all, etc.)." %}
-	{% include ent_list_row.html	name="filter_enemy"		status="Affected"	summary="This derives from <code>ai_goal_actbusy</code> and receives the same improvements." %}
+	{% include ent_list_row.html	name="filter_enemy"		status="Affected"	summary="Uses all base filter changes detailed in <code>filter_activator_class</code>." %}
 	{% include ent_list_row.html	name="filter_multi"		status="Affected"	summary="Uses all base filter changes detailed in <code>filter_activator_class</code>." %}
 	{% include ent_list_row.html	name="filter_redirect_inflictor"		status="New"	summary="Redirects to a target filter with the damage inflictor as the activator instead of the attacker." %}
 	{% include ent_list_row.html	name="filter_redirect_owner"		status="New"	summary="Redirects to a target filter with the activator's owner entity as the activator instead of the original activator." %}
-	{% include ent_list_row.html	name="filter_script"		status="New"	summary="A filter which utilizes hooks in its [[Entity Scripts]]." %}
+	{% include ent_list_row.html	name="filter_script"		status="New"	summary="A filter which utilizes hooks in its <a href=\"/docs/vscript/\">Entity Scripts</a>." %}
 	{% include ent_list_row.html	name="fog_volume"		status="Ported"	summary="Trigger that changes the <code>env_fog_controller</code>, <code>color_correction</code>, and <code>postprocess_controller</code> of players that walk through it. Ported from the Alien Swarm SDK." %}
 	{% include ent_list_row.html	name="func_areaportal"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="func_areaportal_oneway"		status="New"	summary="Variant of func_areaportal that only draws when viewed from one direction. Based on the code from [[CAreaPortalOneWay: this article]]." %}
+	{% include ent_list_row.html	name="func_areaportal_oneway"		status="New"	summary="Variant of func_areaportal that only draws when viewed from one direction. Based on the code from <a href=\"https://developer.valvesoftware.com/wiki/CAreaPortalOneWay\">this article</a>." %}
 	{% include ent_list_row.html	name="func_areaportalwindow"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_breakable"		status="Changed"	summary="" %}
 	{% include ent_list_row.html	name="func_breakable_surf"		status="Changed"	summary="" %}
@@ -242,12 +257,12 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="func_illusionary"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_instance"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_instance_parms"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="func_ladder"		status="Restored"	summary="The original brush ladder from MP games like Counter-Strike: Source. Implemented based on the [[Brush ladders]] article." %}
+	{% include ent_list_row.html	name="func_ladder"		status="Restored"	summary="The original brush ladder from MP games like Counter-Strike: Source. Implemented based on the <a href=\"/https://developer.valvesoftware.com/wiki/Brush_ladders/\">Brush ladders</a> article." %}
 	{% include ent_list_row.html	name="func_ladderendpoint"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_lod"		status="Changed"	summary="Added the ability to manually choose a maximum fade distance." %}
 	{% include ent_list_row.html	name="func_lookdoor"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_monitor"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="func_movelinear"		status="Changed"	summary="Integrated [[CFuncMoveLinear ParentingFix]]." %}
+	{% include ent_list_row.html	name="func_movelinear"		status="Changed"	summary="Integrated <a href=\"/https://developer.valvesoftware.com/wiki/CFuncMoveLinear_ParentingFix\">CFuncMoveLinear ParentingFix</a>." %}
 	{% include ent_list_row.html	name="func_null"		status="New"	summary="Brush version of <code>info_null</code>. Functionally identical." %}
 	{% include ent_list_row.html	name="func_occluder"		status="Stock"	summary="" %}
 	{% include ent_list_row.html	name="func_physbox"		status="Changed"	summary="<code>SetDebris</code> input for toggling debris status." %}
@@ -404,7 +419,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="logic_relay"		status="Changed"	summary="New <code>TriggerWithParameter</code>/<code>OnTriggerParameter</code> I/O for using parameters on the relay." %}
 	{% include ent_list_row.html	name="logic_relay_queue"		status="New"	summary="Queues excess triggers instead of discarding them. This means when a <code>logic_relay_queue</code> is still firing its delayed outputs and it receives another trigger event, it queues it up so when its output events are over, it fires that queued trigger with its data intact." %}
 	{% include ent_list_row.html	name="logic_scene_list_manager"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="logic_script"		status="Ported"	summary="An entity that acts as a container for VScripts. Ported from the Alien Swarm SDK. See [[Mapbase/Scripting]] for more information regarding VScript in Mapbase." %}
+	{% include ent_list_row.html	name="logic_script"		status="Ported"	summary="An entity that acts as a container for VScripts. Ported from the Alien Swarm SDK. See <a href=\"/docs/vscript/\">this article</a> for more information regarding VScript in Mapbase." %}
 	{% include ent_list_row.html	name="logic_script_client"		status="New"	summary="A version of <code>logic_script</code> which runs scripts on clients." %}
 	{% include ent_list_row.html	name="logic_sequence"		status="New"	summary="Coordinates a sequence of cases for things like keypad passwords. Convention is similar to <code>logic_case</code>." %}
 	{% include ent_list_row.html	name="logic_skill"		status="New"	summary="Reads the game's current difficulty level and detects when it changes." %}
@@ -473,7 +488,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="npc_launcher"		status="Changed"	summary="Cleaned up appearance/defaults in Hammer, added <code>OutMissile</code> output that fires for each missile, <code>npc_launcher</code>'s owner entity applies to each missile."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_magnusson"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_maker"		status="Stock"	summary=""	game="hl2" %}
-	{% include ent_list_row.html	name="npc_manhack"		status="Changed"	summary="Added [Source 2013 GitHub pull request fix for npc_maker owner https://github.com/ValveSoftware/source-sdk-2013/pull/362], restored \"Hacked by Alyx\" state with a keyvalue for starting hacked and a convar for allowing Alyx to hack manhacks herself, added <code>Enable</code>/<code>DisableSprites</code> inputs. "	game="hl2" %}
+	{% include ent_list_row.html	name="npc_manhack"		status="Changed"	summary="Added <a href=\"https://github.com/ValveSoftware/source-sdk-2013/pull/362\">Source 2013 GitHub pull request fix for npc_maker owner</a>, restored \"Hacked by Alyx\" state with a keyvalue for starting hacked and a convar for allowing Alyx to hack manhacks herself, added <code>Enable</code>/<code>DisableSprites</code> inputs. "	game="hl2" %}
 	{% include ent_list_row.html	name="npc_metropolice"		status="Changed"	summary="Several new I/O/KV related to policing, added optional ability to throw grenades with I/O/KV from <code>npc_combine_s</code>, new manhack tossing I/O, holstered pistol animation fix, and more."	game="hl2" %}
 	{% include ent_list_row.html	name="npc_missiledefense"		status="Stock"	summary=""	game="hl2" %}
 	{% include ent_list_row.html	name="npc_monk"		status="Changed"	summary="Father Grigori uses his own versions of the companion interactions that blend into his Annabelle."	game="hl2" %}
@@ -596,7 +611,7 @@ The dropdown menus below can be used filter entities by game or by how Mapbase a
 	{% include ent_list_row.html	name="scripted_sequence"		status="Changed"	summary="Proper <code>!activator</code> support on target NPC and outputs, \"No Interruptions\" and \"Override AI\" enabled by default, <code>OnPreIdleSequence</code>/<code>OnEntrySequence</code>/<code>OnActionSequence</code> inputs added, unmarked spawnflags added" %}
 	{% include ent_list_row.html	name="scripted_sound"		status="New"	summary="Causes a sound to be emitted on an entity directly, allowing it to be interrupted by, say, the entity's death or removal. This is useful for lines spoken by NPCs that can't use <code>logic_choreographed_scene</code> and are too \"interactive\" for <code>ambient_generic</code> to work well." %}
 	{% include ent_list_row.html	name="scripted_target"		status="Stock"	summary="" %}
-	{% include ent_list_row.html	name="shadow_control"		status="Changed"	summary="Add ability to toggle [[Dynamic RTT shadow angles in Source 2007: Saul Rennison's dynamic RTT shadow angles]]." %}
+	{% include ent_list_row.html	name="shadow_control"		status="Changed"	summary="Add ability to toggle <a href=\"https://developer.valvesoftware.com/wiki/Dynamic_RTT_shadow_angles_in_Orange_Box_branch\">Dynamic RTT shadow angles in Source 2007: Saul Rennison's dynamic RTT shadow angles</a>." %}
 	{% include ent_list_row.html	name="simple_physics_brush"		status="Restored"	summary="A simple physics brush with no unique properties. Previously only usable with <code>phys_convert</code>, this has been changed so it could be used in Hammer." %}
 	{% include ent_list_row.html	name="simple_physics_prop"		status="Restored"	summary="A simple physics prop with no unique properties. Previously only ussable with <code>phys_convert</code>, this has been changed so it could be placed in Hammer." %}
 	{% include ent_list_row.html	name="sky_camera"		status="Changed"	summary="Added updating capabilities, option to use angles for rotating skybox, ability to use a solid sky color instead of a sky texture, fog I/KV from <code>env_fog_controller</code>, and more." %}
