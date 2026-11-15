@@ -40,6 +40,7 @@ header_pages:
   - about.markdown
   - setup.markdown
   - docs.markdown
+  - updates.markdown
   - credits.markdown
 
 # Exclude from processing.

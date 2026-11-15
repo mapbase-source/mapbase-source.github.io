@@ -1,0 +1,11 @@
+<tr>
+	<td>
+	{% if include.article %}
+		<a href="{{ include.article }}">{{ include.name }}</a>
+	{% else %}
+		{{ include.name }}
+	{% endif %}
+	</td>
+	{% if include.download %}<td class="ent_list_status" style="background-color: #37375c;"><I><a href="{{ include.download }}">Google Drive</a></I></td>{% else %}<td style="background-color: #181818;"></td>{% endif %}
+	<td class="ent_list_summary">{{ include.date }}</td>
+</tr>
