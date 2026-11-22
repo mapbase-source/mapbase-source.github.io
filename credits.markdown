@@ -10,16 +10,27 @@ This page goes over broader attributions for Mapbase itself, particularly those 
 
 ---
 
-### Core Team
+### Mapbase Team
 
 * **Blixibon** — Original creator and maintainer.
+
+#### Core Maintainers
+Trusted maintainers who share ownership of Mapbase.
+
 * **1upD**
-
-### Collaborators
-
-* **Wazanator**
 * **arbabf**
 * **azzy**
+
+#### Collaborators
+
+* **Wazanator**
+
+#### Discord Moderators
+
+* **ThatsRidonkulous**
+* **xypine**
+* **Mark Zer0**
+* **Vvis**
 
 ---
 
